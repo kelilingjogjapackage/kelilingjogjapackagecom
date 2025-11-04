@@ -1,256 +1,582 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keliling Jogja Package – Paket Wisata Jogja Terbaik 62857-1301-1806 – Jelajahi Pesona Yogyakarta dengan Layanan Premium dari KelilingJogjaPackage.com</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-        header {
-            background:url(https://www.joglowisata.com/wp-content/uploads/2018/11/Tugu-Jogja.jpg) no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-            position: relative;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        header p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .cta-button {
-            background-color: #28a745;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #218838;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .package {
-            background-color: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .package h3 {
-            color: #007bff;
-            font-size: 1.8em;
-        }
-        .package p, .package ul {
-            margin: 10px 0;
-        }
-        .contact {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .social {
-            margin: 10px 0;
-        }
-        .social a {
-            margin: 0 10px;
-            color: white;
-            text-decoration: none;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: #25d366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            z-index: 1000;
-        }
-        .whatsapp-float img {
-            width: 30px;
-            height: 30px;
-        }
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-        .highlight {
-            background-color: #e9ecef;
-            padding: 10px;
-            border-left: 5px solid #007bff;
-            margin: 20px 0;
-        }
-        .testimonials {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 20px 0;
-        }
-        .testimonial {
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Keliling Jogja Package – Paket Wisata Jogja Terbaik</title>
+
+<!-- Google Fonts for luxury vibe -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+<style>
+  /* Reset */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* Logo */
+  .logo img {
+    height: 60px;
+    user-select: none;
+  }
+  .logo {
+    display:flex;
+    align-items:center;
+  }
+
+  /* Navigation */
+  nav {
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+  }
+  nav a {
+    color: #f0d084;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #fff0b8;
+  }
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px 140px;
+    background: linear-gradient(to bottom right, #0d0b08cc, #3a2d0acc), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    color: #f7ecd1;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  }
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  }
+
+  /* Paket Cari box luxury style */
+  .search-box {
+    background: #fde9b0dd;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(253, 233, 176, 0.7);
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .search-box select {
+    flex: 1 1 220px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+  }
+  .search-box button {
+    background: #b08949;
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size:1.1rem;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .search-box button:hover {
+    background: #d3b775;
+  }
+
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px 60px;
+  }
+
+  /* Section Title */
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #b08949;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #b08949;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+  p.lead {
+    max-width: 800px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: #d9c588;
+  }
+
+  /* Packages Grid */
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 30px;
+  }
+
+  /* Package Card */
+  .package {
+    background: #282421dd;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 18px #b08949aa;
+    color: #f1ecd9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  .package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px #d3b775cc;
+  }
+  .package h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #f9f6eb;
+    margin-bottom: 12px;
+  }
+  .package p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+    flex-grow: 1;
+  }
+  .package ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #d3b775;
+  }
+  .package .cta-button {
+    background-color: #b08949;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .package .cta-button:hover {
+    background-color: #d3b775;
+  }
+
+  /* Carousel wrapper for Private Trip area */
+  .carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .carousel-track {
+    display: flex;
+    gap: 25px;
+    transition: transform 0.4s ease;
+  }
+  .carousel-item {
+    min-width: 320px;
+    background: #282421dd;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 18px #b08949aa;
+    color: #f1ecd9;
+    flex-shrink: 0;
+  }
+  .carousel-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+  }
+  .carousel-item p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+  }
+  .carousel-item .cta-button {
+    background-color: #b08949;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .carousel-item .cta-button:hover {
+    background-color: #d3b775;
+  }
+
+  /* Carousel arrows */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #b08949dd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+  .carousel-arrow:hover {
+    background: #d3b775dd;
+  }
+  .carousel-arrow.left {
+    left: 10px;
+  }
+  .carousel-arrow.right {
+    right: 10px;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    background: #1e1a10cc;
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px #b08949cc;
+    color: #d9c588;
+  }
+  .testimonial {
+    font-style: italic;
+    margin-bottom: 30px;
+    border-left: 4px solid #b08949;
+    padding-left: 20px;
+    font-size: 1.15rem;
+  }
+
+  /* Footer */
+  footer {
+    background: #111006;
+    color: #cfc79a;
+    padding: 60px 30px 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  footer .footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  footer .footer-section {
+    max-width: 300px;
+  }
+  footer .footer-section h4 {
+    font-family: 'Playfair Display', serif;
+    color: #b08949;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+  footer .footer-section a {
+    color: #e6dba8;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+  }
+  footer .footer-section a:hover {
+    color: #fff;
+  }
+  footer p {
+    margin-top: 20px;
+    color: #a99963;
+  }
+
+  /* WhatsApp Floating button */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(37, 211, 102, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 10000;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.15);
+  }
+  .whatsapp-float img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      font-size: 0.95rem;
+      gap: 15px;
+    }
+    .hero h1 {
+      font-size: 2.3rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .carousel-container {
+      margin: 40px 0 50px;
+    }
+    .carousel-arrow {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 1.2rem;
+    }
+  }
+</style>
+
 </head>
 <body>
-    <header>
-        <h1>Selamat Datang di Keliling Jogja Package – Pengalaman Wisata Jogja yang Tak Terlupakan!</h1>
-        <p>Temukan keindahan Yogyakarta dengan paket wisata eksklusif, sewa mobil dengan sopir profesional, dan layanan antar-jemput yang aman serta nyaman. Hubungi kami untuk petualangan impian Anda!</p>
-       
-    </header>
 
-    <div class="container">
-        <h2>Mengapa Keliling Jogja Package Adalah Pilihan Terbaik untuk Wisata Anda?</h2>
-        <p>Di KelilingJogjaPackage.com, kami tidak hanya menawarkan paket wisata, tetapi pengalaman yang memukau hati. Dengan tim profesional yang berpengalaman, armada kendaraan terawat, dan harga yang kompetitif, kami siap membawa Anda menjelajahi destinasi ikonik seperti Borobudur, Prambanan, Malioboro, dan banyak lagi. Percayakan perjalanan Anda pada kami, dan rasakan kepuasan pelanggan yang telah kami layani selama bertahun-tahun.</p>
+<header>
+  <div class="logo">
+    <img src="https://i.imgur.com/IGUyP2Q.png" alt="Keliling Jogja Package Logo" />
+  </div>
+  <nav>
+    <a href="#packages">Paket Wisata</a>
+    <a href="#testimonials">Testimonial</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+</header>
 
-        <div class="highlight">
-            <h3>Keunggulan Kami:</h3>
-            <ul>
-                <li><strong>Layanan 24 Jam:</strong> Siap melayani kapan saja, bahkan untuk kebutuhan mendadak seperti antar-jemput bandara atau perjalanan dinas.</li>
-                <li><strong>Harga Terjangkau:</strong> Mulai dari Rp.600.000, tanpa biaya tersembunyi, sehingga Anda bisa fokus pada kenikmatan wisata.</li>
-                <li><strong>Tim Profesional:</strong> Sopir berpengalaman, ramah, dan paham betul rute-rute terbaik di Jogja untuk menghindari kemacetan.</li>
-                <li><strong>Kendaraan Terawat:</strong> Armada mobil dan bus yang selalu dalam kondisi prima, dengan fasilitas AC, musik, dan kenyamanan maksimal.</li>
-                <li><strong>Pengalaman Tak Terlupakan:</strong> Dari city tour hingga wisata religi, kami rancang paket yang disesuaikan dengan kebutuhan Anda, termasuk untuk keluarga, rombongan, atau study tour.</li>
-            </ul>
-        </div>
+<section class="hero">
+  <h1>Keliling Jogja Package</h1>
+  <p>Jelajahi pesona Yogyakarta dengan layanan premium dan pengalaman wisata mewah bersama kami.</p>
+  <div class="search-box">
+    <select aria-label="Pilih Paket Wisata">
+      <option value="">Pilih Paket Wisata</option>
+      <option value="mobil-pribadi">Mobil Pribadi</option>
+      <option value="dieng-private">Dieng Private Trip</option>
+      <option value="avanza">AVANZA</option>
+      <option value="innova-reborn">Innova Reborn</option>
+      <option value="hiace-commuter">Hiace Commuter</option>
+    </select>
+    <button onclick="window.open('https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package%2C%20saya%20ingin%20pesan%20paket', '_blank')">Cari & Pesan</button>
+  </div>
+</section>
 
-        <h2>Paket Wisata Unggulan Kami</h2>
-        <p>Setiap paket dirancang untuk memberikan nilai maksimal. Kami tawarkan berbagai pilihan kendaraan mulai dari mobil pribadi hingga bus pariwisata, semua dengan driver terpercaya dan bahan bakar termasuk. Jangan ragu untuk menghubungi kami untuk konsultasi gratis!</p>
+<div class="container">
 
-        <div class="package">
-            <h3>Paket Mobil Pribadi dengan Sopir – Hemat dan Nyaman</h3>
-            <p>Mulai Dari Rp.600.000 – Ideal untuk perjalanan pribadi atau keluarga kecil. Nikmati kemudahan city tour, antar-jemput bandara, atau wisata religi tanpa repot mengemudi.</p>
-            <ul>
-                <li>City Tour: Jelajahi pusat kota Jogja dengan panduan menarik.</li>
-                <li>Perjalanan Dinas: Efisien dan tepat waktu untuk keperluan bisnis.</li>
-                <li>Antar Wisuda: Rayakan momen spesial dengan layanan premium.</li>
-                <li>Antar Luar Kota: Aman dan nyaman menuju destinasi sekitar.</li>
-                <li>Antar Jemput Bandara: Tepat waktu, tanpa stres.</li>
-                <li>Wisata Religi: Kunjungi tempat suci dengan penghormatan penuh.</li>
-                <li>Family Gathering: Buat acara keluarga lebih berkesan.</li>
-                <li>Study Tour: Edukasi dan seru untuk siswa dan mahasiswa.</li>
-            </ul>
-            <p>Semua paket termasuk mobil, sopir, dan bahan bakar. Tidak termasuk parkir dan tiket masuk wisata. Durasi: Sepanjang hari.</p>
-            <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Mobil%20Pribadi" class="cta-button">Pesan Sekarang!</a>
-        </div>
+  <h2 class="section-title" id="packages">Paket Wisata Unggulan Kami</h2>
+  <p class="lead">Kami menghadirkan paket wisata berkualitas dan mewah dengan pengemudi profesional serta kendaraan premium untuk kenyamanan Anda.</p>
 
-        <div class="package">
-            <h3>Dieng Private Trip – Petualangan Alam yang Menakjubkan</h3>
-            <p>Mulai Dari Rp.800.000 – Rasakan kesejukan pegunungan tertinggi di Jawa dengan pemandangan spektakuler. Cocok untuk pecinta alam yang ingin melarikan diri dari hiruk-pikuk kota.</p>
-            <p>Paket ini mencakup perjalanan ke Dieng Plateau, dengan kesempatan menikmati telaga, candi kuno, dan udara segar. Kami pastikan pengalaman Anda aman dan penuh kenangan indah.</p>
-            <p>Semua paket termasuk mobil, sopir, dan bahan bakar. Tidak termasuk parkir dan tiket masuk wisata. Durasi: Sepanjang hari.</p>
-            <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Dieng%20Private%20Trip" class="cta-button">Pesan Sekarang!</a>
-        </div>
-
-        <div class="package">
-            <h3>AVANZA – Kendaraan Andal untuk Perjalanan Anda</h3>
-            <p>Mulai Dari Rp.600.000 – AVANZA kami siap membawa Anda ke mana saja dengan kenyamanan maksimal. Dari wisata sehari hingga perjalanan jauh, kendaraan ini adalah pilihan tepat.</p>
-            <ul>
-                <li>City Tour: Temukan pesona Jogja dengan mudah.</li>
-                <li>Perjalanan Dinas: Produktif dan tanpa gangguan.</li>
-                <li>Antar Wisuda: Momen berharga dengan layanan prima.</li>
-                <li>Antar Luar Kota: Perjalanan lancar dan aman.</li>
-                <li>Antar Jemput Bandara: Cepat dan tepat.</li>
-                <li>Wisata Religi: Kunjungan yang bermakna.</li>
-                <li>Family Gathering: Kumpul keluarga dengan bahagia.</li>
-                <li>Study Tour: Belajar sambil menikmati.</li>
-            </ul>
-            <p>Semua paket termasuk mobil, sopir, dan bahan bakar. Tidak termasuk parkir dan tiket masuk wisata. Durasi: Sepanjang hari.</p>
-            <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20AVANZA" class="cta-button">Pesan Sekarang!</a>
-        </div>
-
-        <div class="package">
-            <h3>Innova Reborn – Luxurious dan Nyaman</h3>
-            <p>Mulai Dari Rp.800.000 – Tingkatkan pengalaman wisata Anda dengan Innova Reborn yang elegan. Cocok untuk keluarga besar atau rombongan kecil yang menginginkan kenyamanan ekstra.</p>
-            <p>Dengan ruang lega dan fitur modern, perjalanan Anda akan terasa seperti liburan mewah. Kami rekomendasikan untuk city tour atau antar-jemput bandara.</p>
-            <p>Semua paket termasuk mobil, sopir, dan bahan bakar. Tidak termasuk parkir dan tiket masuk wisata. Durasi: Sepanjang hari.</p>
-            <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Innova%20Reborn" class="cta-button">Pesan Sekarang!</a>
-        </div>
-
-        <div class="package">
-            <h3>Hiace Commuter 14 Seat – Untuk Rombongan Besar</h3>
-            <p>Mulai Dari Rp.1.200.000 – Bus pariwisata kami mampu menampung hingga 14 orang, sempurna untuk study tour, family gathering, atau perjalanan kelompok. Nikmati perjalanan bersama tanpa khawatir.</p>
-            <p>Dengan sopir profesional, Anda bisa fokus pada obrolan dan kenangan. Kami pastikan setiap penumpang merasa nyaman dan aman.</p>
-            <p>Semua paket termasuk bus, sopir, dan bahan bakar. Tidak termasuk parkir dan tiket masuk wisata. Durasi: Sepanjang hari.</p>
-            <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Hiace%20Commuter" class="cta-button">Pesan Sekarang!</a>
-        </div>
-
-        <div class="testimonials">
-            <h2>Apa Kata Pelanggan Kami?</h2>
-            <div class="testimonial">
-                <p>"Paket wisata dari Keliling Jogja Package benar-benar luar biasa! Sopirnya ramah, mobilnya bersih, dan harga sangat terjangkau. Kami berhasil mengunjungi banyak tempat tanpa repot. Terima kasih atas pengalaman tak terlupakan!" – Rina, Jakarta</p>
-            </div>
-            <div class="testimonial">
-                <p>"Untuk study tour anak saya, layanan ini sangat membantu. Tim profesional dan tepat waktu. Anak-anak pulang dengan banyak cerita menarik. Sangat direkomendasikan!" – Budi, Surabaya</p>
-            </div>
-            <div class="testimonial">
-                <p>"Antar-jemput bandara dengan Innova Reborn membuat perjalanan saya dari bandara ke hotel sangat nyaman. Layanan 24 jam juga sangat berguna untuk kebutuhan mendadak." – Sari, Bandung</p>
-            </div>
-            <div class="testimonial">
-                <p>"Dieng Private Trip adalah highlight liburan kami. Pemandangan indah dan udara sejuk membuat semua lelah hilang. Keliling Jogja Package benar-benar ahli dalam membuat perjalanan spesial." – Andi, Semarang</p>
-            </div>
-        </div>
-
-        <div class="highlight">
-            <h3>Siap Memulai Petualangan Anda?</h3>
-            <p>Jangan tunggu lagi! Hubungi kami sekarang di 62857-1301-1806 atau klik tombol di bawah untuk memesan paket wisata impian Anda. Kami siap membantu merencanakan perjalanan yang sesuai dengan budget dan kebutuhan Anda. Percayakan pada Keliling Jogja Package untuk pengalaman wisata Jogja yang terbaik!</p>
-            <a href="https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package%2C%20saya%20ingin%20konsultasi%20paket%20wisata" class="cta-button">Konsultasi Gratis Sekarang</a>
-        </div>
+  <div class="packages">
+    <!-- Paket lainnya -->
+    <div class="package">
+      <h3>Paket Mobil Pribadi dengan Sopir</h3>
+      <p>Mulai Dari Rp.600.000 – Ideal untuk perjalanan pribadi atau keluarga kecil.</p>
+      <ul>
+        <li>City Tour, Antar Jemput Bandara, Wisata Religi, dan lainnya.</li>
+      </ul>
+      <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Mobil%20Pribadi" class="cta-button">Pesan Sekarang!</a>
     </div>
+    <div class="package">
+      <h3>AVANZA</h3>
+      <p>Mulai Dari Rp.600.000 – Kendaraan andal untuk perjalanan mewah Anda.</p>
+      <ul>
+        <li>City Tour, Perjalanan Dinas, Antar Wisuda, dan lainnya.</li>
+      </ul>
+      <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20AVANZA" class="cta-button">Pesan Sekarang!</a>
+    </div>
+    <div class="package">
+      <h3>Innova Reborn</h3>
+      <p>Mulai Dari Rp.800.000 – Mobil elegan dengan kenyamanan ekstra.</p>
+      <p>Cocok untuk keluarga besar atau rombongan kecil.</p>
+      <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Innova%20Reborn" class="cta-button">Pesan Sekarang!</a>
+    </div>
+    <div class="package">
+      <h3>Hiace Commuter 14 Seat</h3>
+      <p>Mulai Dari Rp.1.200.000 – Cocok untuk rombongan besar dan study tour.</p>
+      <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Hiace%20Commuter" class="cta-button">Pesan Sekarang!</a>
+    </div>
+  </div>
 
-    <footer>
-        background:url(https://www.joglowisata.com/wp-content/uploads/2018/11/Tugu-Jogja.jpg) no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-            position: relative;
-        <p>Informasi Lebih Lanjut</p>
-        <ul>
-            <li>Tentang Kami: Kami adalah penyedia layanan wisata terpercaya di Jogja sejak lama.</li>
-            <li>Cara Pemesanan: Mudah! Hubungi WA kami atau isi formulir online.</li>
-            <li>Harga Sewa Mobil & Bus: Transparan dan tanpa biaya tambahan tersembunyi.</li>
-             <div class="contact">
-            <div class="social">
-                <a href="https://www.instagram.com/kelilingjogjapackage?igsh=MWd2b3ZzOXl5NDc5cw==">Instagram</a>
-                <a href="https://www.tiktok.com/@keliling.jogja.pa?_r=1&_t=ZS-917qyMbbtiL">TikTok</a>
-                <a href="https://www.facebook.com/profile.php?id=61583377858831">Facebook</a>
-            </div>
-            <a href="https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package%2C%20saya%20ingin%20pesan%20paket%20wisata%20Jogja" class="cta-button">Pesan Sekarang via WhatsApp</a>
-        </div>
-        </ul>
-        <p>Kontak: 62857-1301-1806 | Office: Jl. Magelang No.Km 17, Ngosit, Margorejo, Kec. Tempel, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55552  - KelilingJogjaPackage.com - All Rights Reserved | Developed By: Jasa Pembuatan Website Bongkottechno </p>
-    </footer>
+  <!-- Carousel Private Trip dengan tiga item -->
+  <h2 class="section-title" style="margin-top:60px;">Paket Private Trip Pilihan</h2>
+  <div class="carousel-container" aria-label="Carousel Paket Wisata Private Trip">
+    <div class="carousel-arrow left" id="carousel-left" tabindex="0" role="button" aria-label="Geser ke kiri">&#10094;</div>
+    <div class="carousel-arrow right" id="carousel-right" tabindex="0" role="button" aria-label="Geser ke kanan">&#10095;</div>
 
-    <a href="https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package" class="whatsapp-float">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+    <div class="carousel-track" id="carousel-track">
+      <div class="carousel-item">
+        <h3>Dieng Private Trip</h3>
+        <p>Mulai Dari Rp.800.000 – Rasakan kesejukan pegunungan tertinggi di Jawa dengan pemandangan spektakuler.</p>
+        <p>Paket ini mencakup perjalanan ke Dieng Plateau, dengan kesempatan menikmati telaga, candi kuno, dan udara segar.</p>
+        <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Dieng%20Private%20Trip" class="cta-button">Pesan Sekarang!</a>
+      </div>
+
+      <div class="carousel-item">
+        <h3>Borobudur Trip</h3>
+        <p>Nikmati wisata eksklusif ke Candi Borobudur, warisan dunia UNESCO yang menakjubkan.</p>
+        <p>Perjalanan nyaman dengan sopir profesional dan kendaraan premium kami.</p>
+        <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Borobudur%20Trip" class="cta-button">Pesan Sekarang!</a>
+      </div>
+
+      <div class="carousel-item">
+        <h3>Prambanan Trip</h3>
+        <p>Kunjungi keindahan Candi Prambanan dengan pengalaman layanan premium yang lengkap.</p>
+        <p>Pemandu ramah dan kendaraan nyaman untuk memastikan perjalanan menyenangkan.</p>
+        <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Prambanan%20Trip" class="cta-button">Pesan Sekarang!</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight" style="background:#b08949cc; border-radius:20px; padding: 25px; color:#1a1a1a; max-width: 800px; margin: 0 auto 60px;">
+    <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 15px;">Keunggulan Kami:</h3>
+    <ul style="font-weight: 600; font-size: 1.1rem; padding-left: 25px;">
+      <li>Layanan 24 Jam siap melayani kapan saja.</li>
+      <li>Harga Terjangkau mulai dari Rp.600.000 tanpa biaya tersembunyi.</li>
+      <li>Tim Profesional sopir yang ramah dan berpengalaman.</li>
+      <li>Kendaraan terawat dengan fasilitas maksimal.</li>
+      <li>Pengalaman wisata tak terlupakan dengan paket yang disesuaikan.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title" id="testimonials">Apa Kata Pelanggan Kami?</h2>
+  <div class="testimonials" role="list">
+    <div class="testimonial" role="listitem">"Paket wisata dari Keliling Jogja Package benar-benar luar biasa! Sopirnya ramah, mobilnya bersih, dan harga sangat terjangkau." – Rina, Jakarta</div>
+    <div class="testimonial" role="listitem">"Untuk study tour anak saya, layanan ini sangat membantu. Tim profesional dan tepat waktu." – Budi, Surabaya</div>
+    <div class="testimonial" role="listitem">"Antar-jemput bandara dengan Innova Reborn membuat perjalanan sangat nyaman." – Sari, Bandung</div>
+    <div class="testimonial" role="listitem">"Dieng Private Trip adalah highlight liburan kami. Pemandangan indah dan udara sejuk." – Andi, Semarang</div>
+  </div>
+
+</div>
+
+<footer id="contact">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Tentang Kami</h4>
+      <p>Kami adalah penyedia layanan wisata terpercaya di Jogja sejak lama, menjamin layanan terbaik dan kepuasan pelanggan.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Ikuti Kami</h4>
+      <a href="https://www.instagram.com/kelilingjogjapackage?igsh=MWd2b3ZzOXl5NDc5cw==">Instagram</a>
+      <a href="https://www.tiktok.com/@keliling.jogja.pa?_r=1&_t=ZS-917qyMbbtiL">TikTok</a>
+      <a href="https://www.facebook.com/profile.php?id=61583377858831">Facebook</a>
+    </div>
+    <div class="footer-section">
+      <h4>Kontak</h4>
+      <p>Nomor WA: 62857-1301-1806</p>
+      <p>Alamat: Jl. Magelang No.Km 17, Ngosit, Margorejo, Kec. Tempel, Kabupaten Sleman, DIY 55552</p>
+    </div>
+  </div>
+  <p>&copy; 2023 KelilingJogjaPackage.com - All Rights Reserved | Developed By: Jasa Pembuatan Website Bongkottechno</p>
+</footer>
+
+<a href="https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package" class="whatsapp-float" aria-label="Chat via WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+<script>
+  // Carousel functionality
+  const track = document.getElementById('carousel-track');
+  const leftArrow = document.getElementById('carousel-left');
+  const rightArrow = document.getElementById('carousel-right');
+
+  let currentIndex = 0;
+  const itemsToShow = 1; // show 1 item fully, rest hidden partially
+  const totalItems = track.children.length;
+
+  function updateCarousel() {
+    const itemWidth = track.children[0].getBoundingClientRect().width + 25; // width + gap
+    const maxIndex = totalItems - itemsToShow;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+    track.style.transform = translateX(${-itemWidth * currentIndex}px);
+    // Disable arrows when at ends
+    leftArrow.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+    rightArrow.style.visibility = currentIndex === maxIndex ? 'hidden' : 'visible';
+  }
+
+  leftArrow.addEventListener('click', () => {
+    currentIndex--;
+    updateCarousel();
+  });
+  rightArrow.addEventListener('click', () => {
+    currentIndex++;
+    updateCarousel();
+  });
+
+  // Keyboard accessibility on arrows
+  leftArrow.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+  rightArrow.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+
+  // Init carousel on page load
+  window.addEventListener('load', () => {
+    updateCarousel();
+  });
+</script>
+
 </body>
 </html>
