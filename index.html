@@ -5,46 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Keliling Jogja Package – Paket Wisata Jogja Terbaik</title>
 
-<!-- Google Fonts for luxury vibe -->
+<!-- Fonts luxury -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
 
 <style>
-  /* Reset */
   * {
     box-sizing: border-box;
   }
-
   body {
-    margin: 0;
-    background: linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%);
+    margin:0; background: linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%);
     font-family: 'Montserrat', sans-serif;
     color: #eee;
     min-height: 100vh;
   }
-
-  /* Header */
-  header {
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    background: rgba(0,0,0,0.8);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  a {
+    color: inherit;
   }
 
-  /* Logo */
-  .logo img {
-    height: 60px;
-    user-select: none;
+  header {
+    display: flex; align-items: center; padding: 15px 30px;
+    background: rgba(0,0,0,0.85);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    position: sticky; top: 0; z-index: 1000;
   }
   .logo {
-    display:flex;
-    align-items:center;
+    height: 60px;
+    width: 120px;
   }
-
-  /* Navigation */
+  .logo img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+  }
   nav {
     margin-left: auto;
     display: flex;
@@ -58,32 +50,32 @@
     font-size: 1.1rem;
     transition: color 0.3s ease;
   }
-  nav a:hover {
+  nav a:hover, nav a:focus {
     color: #fff0b8;
+    outline: none;
   }
 
-  /* Hero Section */
   .hero {
     text-align: center;
-    padding: 100px 20px 140px;
-    background: linear-gradient(to bottom right, #0d0b08cc, #3a2d0acc), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    padding: 90px 20px 120px;
+    background:
+      linear-gradient(to bottom right, #0d0b08cc, #3a2d0acc),
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')no-repeat center center/cover;
     color: #f7ecd1;
   }
   .hero h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    font-size: 3.3rem;
+    margin-bottom: 18px;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
   }
   .hero p {
-    font-size: 1.3rem;
-    max-width: 700px;
+    font-size: 1.25rem;
+    max-width: 680px;
     margin: 0 auto 40px;
     text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
   }
-
-  /* Paket Cari box luxury style */
   .search-box {
     background: #fde9b0dd;
     max-width: 480px;
@@ -96,7 +88,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  .search-box select {
+  select {
     flex: 1 1 220px;
     padding: 10px 14px;
     border-radius: 8px;
@@ -106,30 +98,29 @@
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
   }
-  .search-box button {
+  button.search-btn {
     background: #b08949;
     border: none;
-    color: #fff;
+    color: white;
     padding: 10px 25px;
     border-radius: 10px;
     font-weight: 700;
-    font-size:1.1rem;
     font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.3s ease;
   }
-  .search-box button:hover {
+  button.search-btn:hover, button.search-btn:focus {
     background: #d3b775;
+    outline: none;
   }
 
-  /* Container */
   .container {
     max-width: 1200px;
     margin: 60px auto;
     padding: 0 20px 60px;
   }
 
-  /* Section Title */
   .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -139,7 +130,7 @@
     display: inline-block;
     padding-bottom: 8px;
   }
-  p.lead {
+  .lead {
     max-width: 800px;
     font-size: 1.15rem;
     line-height: 1.7;
@@ -153,8 +144,6 @@
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
     gap: 30px;
   }
-
-  /* Package Card */
   .package {
     background: #282421dd;
     border-radius: 15px;
@@ -163,12 +152,8 @@
     color: #f1ecd9;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: space-between;
-    transition: transform 0.3s ease;
-  }
-  .package:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px #d3b775cc;
   }
   .package h3 {
     font-family: 'Playfair Display', serif;
@@ -176,16 +161,39 @@
     color: #f9f6eb;
     margin-bottom: 12px;
   }
-  .package p {
-    font-size: 1.05rem;
-    margin-bottom: 15px;
-    flex-grow: 1;
+  .package p, .package ul {
+    font-size: 1rem;
   }
   .package ul {
     padding-left: 20px;
-    margin-bottom: 20px;
-    font-size: 0.95rem;
+    margin: 15px 0;
     color: #d3b775;
+  }
+  .package img {
+    border-radius: 12px;
+    margin-bottom: 15px;
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  }
+  .package .price {
+    font-weight: 700;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    color: #f0d084;
+  }
+  .package .photographer-option {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #e6dba8;
+    font-style: italic;
+  }
+  .package .photographer-option input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
   }
   .package .cta-button {
     background-color: #b08949;
@@ -197,13 +205,15 @@
     font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
     transition: background-color 0.3s ease;
+    border: none;
   }
   .package .cta-button:hover {
     background-color: #d3b775;
   }
 
-  /* Carousel wrapper for Private Trip area */
+  /* Carousel private trip */
   .carousel-container {
     position: relative;
     max-width: 100%;
@@ -224,6 +234,16 @@
     box-shadow: 0 8px 18px #b08949aa;
     color: #f1ecd9;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel-item img {
+    border-radius: 12px;
+    margin-bottom: 15px;
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
   }
   .carousel-item h3 {
     font-family: 'Playfair Display', serif;
@@ -233,6 +253,7 @@
   .carousel-item p {
     font-size: 1.05rem;
     margin-bottom: 15px;
+    flex-grow: 1;
   }
   .carousel-item .cta-button {
     background-color: #b08949;
@@ -246,6 +267,8 @@
     display: inline-block;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
   }
   .carousel-item .cta-button:hover {
     background-color: #d3b775;
@@ -269,8 +292,9 @@
     transition: background-color 0.3s ease;
     z-index: 10;
   }
-  .carousel-arrow:hover {
+  .carousel-arrow:hover, .carousel-arrow:focus {
     background: #d3b775dd;
+    outline: none;
   }
   .carousel-arrow.left {
     left: 10px;
@@ -304,31 +328,34 @@
     font-size: 0.9rem;
     font-weight: 400;
   }
-  footer .footer-content {
+  .footer-content {
     display: flex;
     justify-content: center;
     gap: 80px;
     flex-wrap: wrap;
     margin-bottom: 30px;
   }
-  footer .footer-section {
+  .footer-section {
     max-width: 300px;
   }
-  footer .footer-section h4 {
+  .footer-section h4 {
     font-family: 'Playfair Display', serif;
     color: #b08949;
     margin-bottom: 15px;
     font-size: 1.3rem;
   }
-  footer .footer-section a {
+  .footer-section a {
     color: #e6dba8;
     text-decoration: none;
-    display: block;
-    margin-bottom: 8px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
     transition: color 0.3s ease;
+    font-size: 1.7rem;
   }
-  footer .footer-section a:hover {
+  .footer-section a:hover, .footer-section a:focus {
     color: #fff;
+    outline: none;
   }
   footer p {
     margin-top: 20px;
@@ -352,8 +379,9 @@
     transition: transform 0.3s ease;
     z-index: 10000;
   }
-  .whatsapp-float:hover {
+  .whatsapp-float:hover, .whatsapp-float:focus {
     transform: scale(1.15);
+    outline: none;
   }
   .whatsapp-float img {
     width: 32px;
@@ -372,14 +400,15 @@
     .hero p {
       font-size: 1rem;
     }
-    .carousel-container {
-      margin: 40px 0 50px;
-    }
     .carousel-arrow {
       width: 35px;
       height: 35px;
       line-height: 35px;
       font-size: 1.2rem;
+    }
+    .footer-section a {
+      font-size: 1.5rem;
+      margin: 0 8px;
     }
   }
 </style>
@@ -388,95 +417,132 @@
 <body>
 
 <header>
-  <div class="logo">
-    <img src="https://i.imgur.com/IGUyP2Q.png" alt="Keliling Jogja Package Logo" />
+  <div class="logo" aria-label="Keliling Jogja Package Logo">
+    <!-- Logo base64 image inline -->
+    <img 
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAAAgCAYAAABGErzNAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAANljREFUaIHt1cENgDAMBEBW/9dozdbiZooGpSgFixtJsRGjkppyq/Ynf34WsmnzzNiU17lr8CYBcpfW9ALfiyn+jJ3eA7OWAVCVoIV0ohVRohVpodlKBVqYAlgqFSvoFYChApyAUKnIBQqcgtKwBAqcgFCpyAwqcgtKwBQqcgtKwBAqcgFCpyAwqcgtKwBQqciQZa3fxPQMF4u6WmZ8AAAAASUVORK5CYII="
+      alt="Keliling Jogja Package Logo" />
   </div>
-  <nav>
+  <nav role="navigation" aria-label="Main menu">
     <a href="#packages">Paket Wisata</a>
     <a href="#testimonials">Testimonial</a>
     <a href="#contact">Kontak</a>
   </nav>
 </header>
 
-<section class="hero">
+<section class="hero" role="banner">
   <h1>Keliling Jogja Package</h1>
   <p>Jelajahi pesona Yogyakarta dengan layanan premium dan pengalaman wisata mewah bersama kami.</p>
-  <div class="search-box">
-    <select aria-label="Pilih Paket Wisata">
-      <option value="">Pilih Paket Wisata</option>
-      <option value="mobil-pribadi">Mobil Pribadi</option>
-      <option value="dieng-private">Dieng Private Trip</option>
-      <option value="avanza">AVANZA</option>
-      <option value="innova-reborn">Innova Reborn</option>
-      <option value="hiace-commuter">Hiace Commuter</option>
+  <form class="search-box" id="orderForm" role="search" aria-label="Cari dan Pesan Paket Wisata">
+    <label for="packageSelect" class="sr-only">Pilih Paket Wisata</label>
+    <select id="packageSelect" required aria-required="true" aria-describedby="packageHelp">
+      <option value="" disabled selected>Pilih Paket Wisata</option>
+      <option value="Mobil Pribadi">Mobil Pribadi</option>
+      <option value="Dieng Private Trip">Dieng Private Trip</option>
+      <option value="Borobudur Private Trip">Borobudur Private Trip</option>
+      <option value="Prambanan Private Trip">Prambanan Private Trip</option>
+      <option value="AVANZA">AVANZA</option>
+      <option value="Innova Reborn">Innova Reborn</option>
+      <option value="Hiace Commuter">Hiace Commuter</option>
     </select>
-    <button onclick="window.open('https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package%2C%20saya%20ingin%20pesan%20paket', '_blank')">Cari & Pesan</button>
-  </div>
+    <button type="submit" class="search-btn" aria-label="Cari dan pesan paket wisata terpilih">Cari & Pesan</button>
+  </form>
 </section>
 
-<div class="container">
+<main class="container" role="main">
 
   <h2 class="section-title" id="packages">Paket Wisata Unggulan Kami</h2>
   <p class="lead">Kami menghadirkan paket wisata berkualitas dan mewah dengan pengemudi profesional serta kendaraan premium untuk kenyamanan Anda.</p>
 
   <div class="packages">
-    <!-- Paket lainnya -->
-    <div class="package">
-      <h3>Paket Mobil Pribadi dengan Sopir</h3>
-      <p>Mulai Dari Rp.600.000 – Ideal untuk perjalanan pribadi atau keluarga kecil.</p>
-      <ul>
-        <li>City Tour, Antar Jemput Bandara, Wisata Religi, dan lainnya.</li>
-      </ul>
-      <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Mobil%20Pribadi" class="cta-button">Pesan Sekarang!</a>
-    </div>
-    <div class="package">
-      <h3>AVANZA</h3>
-      <p>Mulai Dari Rp.600.000 – Kendaraan andal untuk perjalanan mewah Anda.</p>
-      <ul>
-        <li>City Tour, Perjalanan Dinas, Antar Wisuda, dan lainnya.</li>
-      </ul>
-      <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20AVANZA" class="cta-button">Pesan Sekarang!</a>
-    </div>
-    <div class="package">
-      <h3>Innova Reborn</h3>
-      <p>Mulai Dari Rp.800.000 – Mobil elegan dengan kenyamanan ekstra.</p>
-      <p>Cocok untuk keluarga besar atau rombongan kecil.</p>
-      <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Innova%20Reborn" class="cta-button">Pesan Sekarang!</a>
-    </div>
-    <div class="package">
-      <h3>Hiace Commuter 14 Seat</h3>
-      <p>Mulai Dari Rp.1.200.000 – Cocok untuk rombongan besar dan study tour.</p>
-      <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Paket%20Hiace%20Commuter" class="cta-button">Pesan Sekarang!</a>
-    </div>
+
+    <!-- Example package 1 -->
+    <article class="package" tabindex="0">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80" alt="Pemandangan Gunung Dieng" />
+      <h3>Package 1 - Dieng Private Trip</h3>
+      <p><strong>Harga per pax:</strong> Rp.800.000</p>
+      <p><strong>Include:</strong> Transportasi, sopir profesional, tiket masuk Dieng Plateau</p>
+      <p class="photographer-option"><label><input type="checkbox" data-package="Dieng Private Trip - Fotografer" /> Tambah layanan fotografer profesional (+ Rp.200.000)</label></p>
+      <button class="cta-button book-btn" data-package="Dieng Private Trip">Pesan Paket Ini</button>
+    </article>
+
+    <!-- Example package 2 -->
+    <article class="package" tabindex="0">
+      <img src="https://images.unsplash.com/photo-1608655229557-120263f6a3f0?auto=format&fit=crop&w=700&q=80" alt="Candi Borobudur" />
+      <h3>Package 2 - Borobudur Private Trip</h3>
+      <p><strong>Harga per pax:</strong> Rp.900.000</p>
+      <p><strong>Include:</strong> Transportasi, sopir profesional, tiket masuk Candi Borobudur</p>
+      <p class="photographer-option"><label><input type="checkbox" data-package="Borobudur Private Trip - Fotografer" /> Tambah layanan fotografer profesional (+ Rp.200.000)</label></p>
+      <button class="cta-button book-btn" data-package="Borobudur Private Trip">Pesan Paket Ini</button>
+    </article>
+
+    <!-- Example package 3 -->
+    <article class="package" tabindex="0">
+      <img src="https://images.unsplash.com/photo-1533681702792-39e8a080d86a?auto=format&fit=crop&w=700&q=80" alt="Candi Prambanan" />
+      <h3>Package 3 - Prambanan Private Trip</h3>
+      <p><strong>Harga per pax:</strong> Rp.850.000</p>
+      <p><strong>Include:</strong> Transportasi, sopir profesional, tiket masuk Candi Prambanan</p>
+      <p class="photographer-option"><label><input type="checkbox" data-package="Prambanan Private Trip - Fotografer" /> Tambah layanan fotografer profesional (+ Rp.200.000)</label></p>
+      <button class="cta-button book-btn" data-package="Prambanan Private Trip">Pesan Paket Ini</button>
+    </article>
+
+    <!-- Other vehicle options -->
+    <article class="package" tabindex="0">
+      <img src="https://cdn.pixabay.com/photo/2018/03/26/22/15/car-3260192_1280.jpg" alt="Mobil Avanza" />
+      <h3>Package 4 - AVANZA</h3>
+      <p><strong>Harga per pax:</strong> Rp.600.000</p>
+      <p><strong>Include:</strong> Transportasi, sopir profesional, bahan bakar</p>
+      <p class="photographer-option"><label><input type="checkbox" data-package="AVANZA - Fotografer" /> Tambah layanan fotografer profesional (+ Rp.200.000)</label></p>
+      <button class="cta-button book-btn" data-package="AVANZA">Pesan Paket Ini</button>
+    </article>
+
+    <article class="package" tabindex="0">
+      <img src="https://cdn.pixabay.com/photo/2018/04/09/22/57/innova-3203351_1280.jpg" alt="Mobil Innova Reborn" />
+      <h3>Package 5 - Innova Reborn</h3>
+      <p><strong>Harga per pax:</strong> Rp.800.000</p>
+      <p><strong>Include:</strong> Transportasi mewah, sopir ramah, bahan bakar</p>
+      <p class="photographer-option"><label><input type="checkbox" data-package="Innova Reborn - Fotografer" /> Tambah layanan fotografer profesional (+ Rp.200.000)</label></p>
+      <button class="cta-button book-btn" data-package="Innova Reborn">Pesan Paket Ini</button>
+    </article>
+
+    <article class="package" tabindex="0">
+      <img src="https://cdn.pixabay.com/photo/2017/09/21/20/56/bus-2779241_1280.jpg" alt="Hiace Commuter 14 Seat" />
+      <h3>Package 6 - Hiace Commuter 14 Seat</h3>
+      <p><strong>Harga per pax:</strong> Rp.1.200.000</p>
+      <p><strong>Include:</strong> Bus pariwisata 14 seat, sopir profesional, bahan bakar</p>
+      <p class="photographer-option"><label><input type="checkbox" data-package="Hiace Commuter - Fotografer" /> Tambah layanan fotografer profesional (+ Rp.200.000)</label></p>
+      <button class="cta-button book-btn" data-package="Hiace Commuter">Pesan Paket Ini</button>
+    </article>
   </div>
 
-  <!-- Carousel Private Trip dengan tiga item -->
+  <!-- Carousel Private Trip -->
   <h2 class="section-title" style="margin-top:60px;">Paket Private Trip Pilihan</h2>
   <div class="carousel-container" aria-label="Carousel Paket Wisata Private Trip">
-    <div class="carousel-arrow left" id="carousel-left" tabindex="0" role="button" aria-label="Geser ke kiri">&#10094;</div>
-    <div class="carousel-arrow right" id="carousel-right" tabindex="0" role="button" aria-label="Geser ke kanan">&#10095;</div>
+    <button class="carousel-arrow left" id="carousel-left" aria-label="Geser ke kiri">&#10094;</button>
+    <button class="carousel-arrow right" id="carousel-right" aria-label="Geser ke kanan">&#10095;</button>
 
-    <div class="carousel-track" id="carousel-track">
-      <div class="carousel-item">
+    <div class="carousel-track" id="carousel-track" tabindex="0">
+      <article class="carousel-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80" alt="Pemandangan Gunung Dieng" />
         <h3>Dieng Private Trip</h3>
         <p>Mulai Dari Rp.800.000 – Rasakan kesejukan pegunungan tertinggi di Jawa dengan pemandangan spektakuler.</p>
         <p>Paket ini mencakup perjalanan ke Dieng Plateau, dengan kesempatan menikmati telaga, candi kuno, dan udara segar.</p>
-        <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Dieng%20Private%20Trip" class="cta-button">Pesan Sekarang!</a>
-      </div>
-
-      <div class="carousel-item">
-        <h3>Borobudur Trip</h3>
+        <button class="cta-button book-btn" data-package="Dieng Private Trip">Pesan Sekarang!</button>
+      </article>
+      <article class="carousel-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1608655229557-120263f6a3f0?auto=format&fit=crop&w=700&q=80" alt="Candi Borobudur" />
+        <h3>Borobudur Private Trip</h3>
         <p>Nikmati wisata eksklusif ke Candi Borobudur, warisan dunia UNESCO yang menakjubkan.</p>
         <p>Perjalanan nyaman dengan sopir profesional dan kendaraan premium kami.</p>
-        <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Borobudur%20Trip" class="cta-button">Pesan Sekarang!</a>
-      </div>
-
-      <div class="carousel-item">
-        <h3>Prambanan Trip</h3>
+        <button class="cta-button book-btn" data-package="Borobudur Private Trip">Pesan Sekarang!</button>
+      </article>
+      <article class="carousel-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1533681702792-39e8a080d86a?auto=format&fit=crop&w=700&q=80" alt="Candi Prambanan" />
+        <h3>Prambanan Private Trip</h3>
         <p>Kunjungi keindahan Candi Prambanan dengan pengalaman layanan premium yang lengkap.</p>
         <p>Pemandu ramah dan kendaraan nyaman untuk memastikan perjalanan menyenangkan.</p>
-        <a href="https://wa.me/6285713011806?text=Halo%2C%20saya%20ingin%20pesan%20Prambanan%20Trip" class="cta-button">Pesan Sekarang!</a>
-      </div>
+        <button class="cta-button book-btn" data-package="Prambanan Private Trip">Pesan Sekarang!</button>
+      </article>
     </div>
   </div>
 
@@ -492,14 +558,14 @@
   </div>
 
   <h2 class="section-title" id="testimonials">Apa Kata Pelanggan Kami?</h2>
-  <div class="testimonials" role="list">
-    <div class="testimonial" role="listitem">"Paket wisata dari Keliling Jogja Package benar-benar luar biasa! Sopirnya ramah, mobilnya bersih, dan harga sangat terjangkau." – Rina, Jakarta</div>
-    <div class="testimonial" role="listitem">"Untuk study tour anak saya, layanan ini sangat membantu. Tim profesional dan tepat waktu." – Budi, Surabaya</div>
-    <div class="testimonial" role="listitem">"Antar-jemput bandara dengan Innova Reborn membuat perjalanan sangat nyaman." – Sari, Bandung</div>
-    <div class="testimonial" role="listitem">"Dieng Private Trip adalah highlight liburan kami. Pemandangan indah dan udara sejuk." – Andi, Semarang</div>
-  </div>
+  <section class="testimonials" role="list">
+    <blockquote class="testimonial" role="listitem" tabindex="0">"Paket wisata dari Keliling Jogja Package benar-benar luar biasa! Sopirnya ramah, mobilnya bersih, dan harga sangat terjangkau." – Rina, Jakarta</blockquote>
+    <blockquote class="testimonial" role="listitem" tabindex="0">"Untuk study tour anak saya, layanan ini sangat membantu. Tim profesional dan tepat waktu." – Budi, Surabaya</blockquote>
+    <blockquote class="testimonial" role="listitem" tabindex="0">"Antar-jemput bandara dengan Innova Reborn membuat perjalanan sangat nyaman." – Sari, Bandung</blockquote>
+    <blockquote class="testimonial" role="listitem" tabindex="0">"Dieng Private Trip adalah highlight liburan kami. Pemandangan indah dan udara sejuk." – Andi, Semarang</blockquote>
+  </section>
 
-</div>
+</main>
 
 <footer id="contact">
   <div class="footer-content">
@@ -507,44 +573,91 @@
       <h4>Tentang Kami</h4>
       <p>Kami adalah penyedia layanan wisata terpercaya di Jogja sejak lama, menjamin layanan terbaik dan kepuasan pelanggan.</p>
     </div>
-    <div class="footer-section">
+    <div class="footer-section" aria-label="Ikuti kami di media sosial">
       <h4>Ikuti Kami</h4>
-      <a href="https://www.instagram.com/kelilingjogjapackage?igsh=MWd2b3ZzOXl5NDc5cw==">Instagram</a>
-      <a href="https://www.tiktok.com/@keliling.jogja.pa?_r=1&_t=ZS-917qyMbbtiL">TikTok</a>
-      <a href="https://www.facebook.com/profile.php?id=61583377858831">Facebook</a>
+      <a href="https://www.instagram.com/kelilingjogjapackage?igsh=MWd2b3ZzOXl5NDc5cw==" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg style="height:24px;width:24px;vertical-align:middle;fill:#e6dba8;" viewBox="0 0 24 24" ><path d="M7.75 2h8.5C18.55 2 20 3.45 20 5.75v8.5c0 2.3-1.45 3.75-3.75 3.75h-8.5C5.45 18 4 16.55 4 14.25v-8.5C4 3.45 5.45 2 7.75 2zm0 2a1.75 1.75 0 00-1.75 1.75v8.5a1.75 1.75 0 001.75 1.75h8.5a1.75 1.75 0 001.75-1.75v-8.5A1.75 1.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm3.75-1.75a1 1 0 110 2 1 1 0 010-2z"></path></svg>
+      </a>
+      <a href="https://www.tiktok.com/@keliling.jogja.pa?_r=1&_t=ZS-917qyMbbtiL" aria-label="TikTok" target="_blank" rel="noopener">
+        <svg style="height:24px;width:24px;vertical-align:middle;fill:#e6dba8;" viewBox="0 0 24 24"><path d="M16.957 9.344v7.108a4.234 4.234 0 01-7.18 3.244v-5.729a6.29 6.29 0 002.528.52c.09 0 .18 0 .268-.01a4.107 4.107 0 001.1-.234v-5.9a9.73 9.73 0 01-2.868-.32v-3.83a13.743 13.743 0 006.152 3.41z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61583377858831" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg style="height:24px;width:24px;vertical-align:middle;fill:#e6dba8;" viewBox="0 0 24 24"><path d="M22 12c0-5.514-4.486-10-10-10S2 6.486 2 12c0 5.018 3.656 9.163 8.438 9.878v-6.987h-2.54V12h2.54v-2.182c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.466h-1.26c-1.243 0-1.63.772-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.344 21.163 22 17.019 22 12z"/></svg>
+      </a>
     </div>
     <div class="footer-section">
       <h4>Kontak</h4>
-      <p>Nomor WA: 62857-1301-1806</p>
+      <p>Nomor WA: <a href="https://wa.me/6285713011806" style="color: #f0d084; font-weight: 700;">62857-1301-1806</a></p>
       <p>Alamat: Jl. Magelang No.Km 17, Ngosit, Margorejo, Kec. Tempel, Kabupaten Sleman, DIY 55552</p>
     </div>
   </div>
   <p>&copy; 2023 KelilingJogjaPackage.com - All Rights Reserved | Developed By: Jasa Pembuatan Website Bongkottechno</p>
 </footer>
 
-<a href="https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package" class="whatsapp-float" aria-label="Chat via WhatsApp">
+<a href="https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package" class="whatsapp-float" aria-label="Chat via WhatsApp" tabindex="0">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
 </a>
 
 <script>
-  // Carousel functionality
+  // Send order to WhatsApp based on select or button clicked
+  const form = document.getElementById('orderForm');
+  const select = document.getElementById('packageSelect');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const packageName = select.value;
+    if(!packageName) {
+      alert('Silakan pilih paket wisata terlebih dahulu.');
+      select.focus();
+      return;
+    }
+    const msg = Aku memesan paket *${packageName}* apakah masih tersedia?;
+    const encodedMsg = encodeURIComponent(msg);
+    window.open(https://wa.me/6285713011806?text=${encodedMsg}, '_blank');
+  });
+
+  // Handle booking buttons in packages and carousel
+  document.querySelectorAll('.book-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const card = btn.closest('.package, .carousel-item');
+      if(!card) return;
+
+      // Check if photographer option selected (checkbox within same card/package)
+      const checkbox = card.querySelector('input[type="checkbox"]');
+      let photogText = '';
+      if(checkbox && checkbox.checked){
+        photogText = ' dengan tambahan layanan fotografer profesional';
+      }
+
+      const packageName = btn.getAttribute('data-package');
+      const msg = Aku memesan paket *${packageName}*${photogText} apakah masih tersedia?;
+      const encodedMsg = encodeURIComponent(msg);
+      window.open(https://wa.me/6285713011806?text=${encodedMsg}, '_blank');
+    });
+  });
+
+  // Carousel behavior
   const track = document.getElementById('carousel-track');
   const leftArrow = document.getElementById('carousel-left');
   const rightArrow = document.getElementById('carousel-right');
 
   let currentIndex = 0;
-  const itemsToShow = 1; // show 1 item fully, rest hidden partially
-  const totalItems = track.children.length;
+  const items = track.children;
+  const totalItems = items.length;
 
   function updateCarousel() {
-    const itemWidth = track.children[0].getBoundingClientRect().width + 25; // width + gap
-    const maxIndex = totalItems - itemsToShow;
-    if (currentIndex < 0) currentIndex = 0;
-    if (currentIndex > maxIndex) currentIndex = maxIndex;
-    track.style.transform = translateX(${-itemWidth * currentIndex}px);
-    // Disable arrows when at ends
+    const containerWidth = track.parentElement.offsetWidth;
+    const itemWidth = items[0].offsetWidth + 25; // include gap
+    const visibleCount = Math.floor(containerWidth / itemWidth);
+    const maxIndex = totalItems - visibleCount;
+    if(currentIndex < 0) currentIndex = 0;
+    if(currentIndex > maxIndex) currentIndex = maxIndex < 0 ? 0 : maxIndex;
+
+    const moveX = currentIndex * itemWidth;
+    track.style.transform = translateX(-${moveX}px);
+
     leftArrow.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
-    rightArrow.style.visibility = currentIndex === maxIndex ? 'hidden' : 'visible';
+    rightArrow.style.visibility = currentIndex >= maxIndex ? 'hidden' : 'visible';
   }
 
   leftArrow.addEventListener('click', () => {
@@ -556,27 +669,40 @@
     updateCarousel();
   });
 
-  // Keyboard accessibility on arrows
-  leftArrow.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+  // keyboard support
+  leftArrow.addEventListener('keydown', e => {
+    if(e.key === 'Enter' || e.key === " ") {
       e.preventDefault();
       currentIndex--;
       updateCarousel();
     }
   });
-  rightArrow.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+  rightArrow.addEventListener('keydown', e => {
+    if(e.key === 'Enter' || e.key === " ") {
       e.preventDefault();
       currentIndex++;
       updateCarousel();
     }
   });
 
-  // Init carousel on page load
-  window.addEventListener('load', () => {
-    updateCarousel();
-  });
+  window.addEventListener('resize', updateCarousel);
+  window.addEventListener('load', updateCarousel);
+
 </script>
+
+<!-- Accessibility styling for screen reader only text -->
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+</style>
 
 </body>
 </html>
