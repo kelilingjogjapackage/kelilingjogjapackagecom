@@ -23,6 +23,9 @@
         .navbar-brand img { width: 50px; height: auto; margin-right: 10px; }
         footer a { color: white; text-decoration: none; }
         footer a:hover { color: #ffc107; }
+        .floating-wa { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+        .floating-wa a { display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: #25D366; border-radius: 50%; color: white; font-size: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: transform 0.3s ease; text-decoration: none; }
+        .floating-wa a:hover { transform: scale(1.1); background: #128C7E; }
     </style>
 </head>
 <body>
@@ -190,7 +193,27 @@
         </div>
     </section>
 
-     
+    <!-- Review -->
+    <section id="review" class="section bg-light">
+        <div class="container">
+            <h2>Review</h2>
+            <div class="star-rating" id="starRating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <div class="mb-3">
+                <label for="komentar" class="form-label">Komentar</label>
+                <textarea class="form-control" id="komentar" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="submitReview()">Kirim Review</button>
+            <div id="reviews" class="mt-4">
+                <!-- Reviews akan ditampilkan di sini -->
+            </div>
+        </div>
+    </section>
 
     <!-- Testimonial -->
     <section class="section">
@@ -237,7 +260,14 @@
         </div>
     </section>
 
-   
+    <!-- Kontak -->
+    <section id="kontak" class="section">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>WhatsApp: <a href="https://wa.me/6285713011806?text=Hai!%20👋%20Selamat%20datang%20di%20Keliling%20Jogja%20Package.%20Kami%20siap%20membantu%20kebutuhan%20transportasi%20Anda%20🚗✨%20Silakan%20pilih%20menu%20di%20bawah%20ini%20agar%20kami%20bisa%20bantu%20lebih%20cepat">0857-1301-1806</a></p>
+            <p>Email: info@kelilingjogjapackage.com</p>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -263,10 +293,11 @@
                     <p><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</p>
                     <div class="galeri-traveler mt-3">
                         <h6>Ikuti Kami:</h6>
-                        <a href="https://instagram.com/kelilingjogjapackage" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com/kelilingjogjapackage" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://tiktok.com/@kelilingjogjapackage" target="_blank"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://wa.me/6285713011806" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/kelilingjogjapackage" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/kelilingjogjapackage" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/@kelilingjogjapackage" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com/@kelilingjogjapackage" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/6285713011806" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -276,6 +307,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-wa">
+        <a href="https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package!%20Saya%20ingin%20bertanya" target="_blank" title="Chat WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
