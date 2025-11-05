@@ -89,14 +89,35 @@
             font-size: 0.9rem;
         }
         
+        .destination-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .destination-card img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+        
+        .destination-card h5 {
+            color: var(--dark-luxury);
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        
         .package-card {
             background: white;
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            margin: 20px;
+            margin-bottom: 30px;
             transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%;
         }
         
         .package-card:hover {
@@ -109,16 +130,11 @@
             color: white;
             padding: 20px;
             text-align: center;
-            min-height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         
         .package-header h4 {
             margin: 0;
             font-weight: 700;
-            font-size: 1.3rem;
         }
         
         .package-body {
@@ -132,7 +148,7 @@
             border-radius: 10px;
             text-align: center;
             margin: 15px 0;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 700;
         }
         
@@ -313,35 +329,6 @@
         .star.selected {
             color: var(--primary-gold);
         }
-
-        /* Carousel Custom Styles */
-        .carousel-item {
-            padding: 20px 50px;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 5%;
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: var(--primary-gold);
-            border-radius: 50%;
-            padding: 20px;
-        }
-
-        .carousel-indicators button {
-            background-color: var(--primary-gold);
-        }
-
-        .destination-carousel-item {
-            padding: 30px;
-        }
-
-        .package-carousel .carousel-item {
-            min-height: 700px;
-        }
     </style>
 </head>
 <body>
@@ -434,405 +421,6 @@
                             <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Avanza" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
                         </div>
                     </div>
-
-                    <!-- Slide 3: Kabupaten Bantul -->
-                    <div class="carousel-item">
-                        <div class="destination-carousel-item">
-                            <div class="region-section">
-                                <h3 class="region-title text-center"><i class="fas fa-map-marker-alt"></i> Kabupaten Bantul</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Pantai & Wisata Laut</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Pantai Parangtritis</strong> - Pantai legendaris Ratu Kidul</li>
-                                            <li><strong>Pantai Parangkusumo</strong> - Pantai spiritual dengan gumuk</li>
-                                            <li><strong>Pantai Depok</strong> - Surga seafood sunset romantis</li>
-                                            <li><strong>Pantai Goa Cemara</strong> - Pantai dengan cemara rindang</li>
-                                            <li><strong>Gumuk Pasir</strong> - Padang pasir ala Timur Tengah</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Wisata Alam & Edukasi</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Tebing Breksi</strong> - Quarry dengan arsitektur unik</li>
-                                            <li><strong>Puncak Becici</strong> - Spot sunrise view pegunungan</li>
-                                            <li><strong>Hutan Pinus Pengger</strong> - Gardu pandang romantis</li>
-                                            <li><strong>Goa Selarong</strong> - Gua bersejarah Pangeran Diponegoro</li>
-                                            <li><strong>Taman Batu</strong> - Kebun buah spot foto menarik</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 4: Kabupaten Gunungkidul -->
-                    <div class="carousel-item">
-                        <div class="destination-carousel-item">
-                            <div class="region-section">
-                                <h3 class="region-title text-center"><i class="fas fa-map-marker-alt"></i> Kabupaten Gunungkidul</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Pantai Eksotis</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Pantai Indrayanti</strong> - Pasir putih fasilitas premium</li>
-                                            <li><strong>Pantai Timang</strong> - Gondola unik melintasi tebing</li>
-                                            <li><strong>Pantai Wediombo</strong> - Tersembunyi dengan kolam alami</li>
-                                            <li><strong>Pantai Siung</strong> - Surga rock climbing tebing megah</li>
-                                            <li><strong>Pantai Ngrenehan</strong> - Desa nelayan seafood segar</li>
-                                            <li><strong>Pantai Krakal</strong> - Pantai landai spot camping</li>
-                                            <li><strong>Pantai Baron</strong> - Pertemuan sungai dan laut</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Wisata Petualangan</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Goa Pindul</strong> - Cave tubing adventure menantang</li>
-                                            <li><strong>Air Terjun Sri Gethuk</strong> - Air terjun rakit bambu</li>
-                                            <li><strong>Embung Batara Sriten</strong> - Danau view perbukitan</li>
-                                            <li><strong>Bukit Panguk Kediwung</strong> - Sunrise kabut mistis</li>
-                                            <li><strong>Heha Sky View</strong> - Resto pemandangan 360°</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 5: Kabupaten Kulon Progo -->
-                    <div class="carousel-item">
-                        <div class="destination-carousel-item">
-                            <div class="region-section">
-                                <h3 class="region-title text-center"><i class="fas fa-map-marker-alt"></i> Kabupaten Kulon Progo</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Wisata Pantai</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Pantai Glagah</strong> - Pantai dengan laguna eksotis</li>
-                                            <li><strong>Pantai Trisik</strong> - Pantai spiritual upacara labuhan</li>
-                                            <li><strong>Pantai Congot</strong> - Spot surfing terbaik Jogja</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Wisata Alam</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Waduk Sermo</strong> - Danau waduk spot memancing</li>
-                                            <li><strong>Kalibiru</strong> - Tree top adventure view waduk</li>
-                                            <li><strong>Puncak Suroloyo</strong> - Tempat suci sunrise memukau</li>
-                                            <li><strong>Bukit Klangon</strong> - Spot foto instagramable swing</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 6: Kabupaten Magelang -->
-                    <div class="carousel-item">
-                        <div class="destination-carousel-item">
-                            <div class="region-section">
-                                <h3 class="region-title text-center"><i class="fas fa-map-marker-alt"></i> Kabupaten Magelang</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Wisata Heritage Dunia</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Candi Borobudur</strong> ⭐ - Candi Buddha terbesar dunia UNESCO</li>
-                                            <li><strong>Candi Mendut</strong> - Arca Buddha terbesar di Jawa</li>
-                                            <li><strong>Candi Pawon</strong> - Candi transit Borobudur-Mendut</li>
-                                            <li><strong>Punthuk Setumbu</strong> - Spot sunrise terbaik view Borobudur</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Wisata Alam & Petualangan</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Ketep Pass</strong> - Viewing point Merapi & Merbabu</li>
-                                            <li><strong>Bukit Rhema</strong> - Landmark unik Gereja Ayam view 360°</li>
-                                            <li><strong>Svargabumi</strong> - Sky garden ornamen tradisional Jawa</li>
-                                            <li><strong>Rafting Sungai Elo</strong> - Arung jeram pemandangan alami</li>
-                                            <li><strong>Pos Mati</strong> - Spot camping view pegunungan</li>
-                                            <li><strong>Umbul Tlatar</strong> - Kolam pemandian jernih alami</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#destinasiCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#destinasiCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Paket Wisata dengan Carousel -->
-    <section id="paket" class="section">
-        <div class="container">
-            <h2 class="section-title text-center">Paket Wisata Eksklusif</h2>
-            <p class="text-center mb-5">Pilihan paket tour premium yang dirancang khusus untuk pengalaman tak terlupakan</p>
-
-            <!-- Carousel Paket -->
-            <div id="paketCarousel" class="carousel slide package-carousel" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#paketCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#paketCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#paketCarousel" data-bs-slide-to="2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Slide 1: Paket 1 & 2 -->
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="package-card">
-                                    <div class="package-header">
-                                        <h4><i class="fas fa-crown"></i> PAKET 1: Heritage Triangle Luxury</h4>
-                                    </div>
-                                    <div class="package-body">
-                                        <p><strong>Durasi:</strong> Full Day (08.00 - 18.00)</p>
-                                        <p><strong>Destinasi:</strong> Borobudur → Prambanan → Keraton Yogyakarta → Malioboro</p>
-                                        <div class="price-tag">
-                                            2-4 pax: Rp 850.000/pax<br>
-                                            5-7 pax: Rp 650.000/pax<br>
-                                            8-12 pax: Rp 550.000/pax
-                                        </div>
-                                        <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
-                                        <ul class="include-list">
-                                            <li><i class="fas fa-check-circle"></i> Mobil Premium + Sopir + BBM</li>
-                                            <li><i class="fas fa-check-circle"></i> Tiket Masuk Semua Destinasi</li>
-                                            <li><i class="fas fa-check-circle"></i> Guide Berlisensi</li>
-                                            <li><i class="fas fa-check-circle"></i> Lunch di Restoran Pilihan</li>
-                                            <li><i class="fas fa-check-circle"></i> Air Mineral & Snack</li>
-                                            <li><i class="fas fa-check-circle"></i> Dokumentasi & Asuransi</li>
-                                        </ul>
-                                        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Pengeluaran pribadi, tips guide</p>
-                                        <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%201:%20Heritage%20Triangle%20Luxury" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="package-card">
-                                    <div class="package-header">
-                                        <h4><i class="fas fa-umbrella-beach"></i> PAKET 2: Coastal Paradise</h4>
-                                    </div>
-                                    <div class="package-body">
-                                        <p><strong>Durasi:</strong> Full Day (07.00 - 19.00)</p>
-                                        <p><strong>Destinasi:</strong> Pantai Timang → Indrayanti → Goa Pindul → Hutan Pinus Pengger</p>
-                                        <div class="price-tag">
-                                            2-4 pax: Rp 750.000/pax<br>
-                                            5-7 pax: Rp 600.000/pax<br>
-                                            8-12 pax: Rp 500.000/pax
-                                        </div>
-                                        <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
-                                        <ul class="include-list">
-                                            <li><i class="fas fa-check-circle"></i> Mobil Premium + Sopir + BBM</li>
-                                            <li><i class="fas fa-check-circle"></i> Tiket & Aktivitas Cave Tubing</li>
-                                            <li><i class="fas fa-check-circle"></i> Guide Berpengalaman</li>
-                                            <li><i class="fas fa-check-circle"></i> Lunch Seafood Segar</li>
-                                            <li><i class="fas fa-check-circle"></i> Pelampung & Safety Equipment</li>
-                                            <li><i class="fas fa-check-circle"></i> Air Mineral & Dokumentasi</li>
-                                        </ul>
-                                        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Gondola Pantai Timang (Rp 150k), tips</p>
-                                        <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%202:%20Coastal%20Paradise" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2: Paket 3 & 4 -->
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="package-card">
-                                    <div class="package-header">
-                                        <h4><i class="fas fa-sun"></i> PAKET 3: Sunrise Borobudur Deluxe</h4>
-                                    </div>
-                                    <div class="package-body">
-                                        <p><strong>Durasi:</strong> Early Morning (04.00 - 15.00)</p>
-                                        <p><strong>Destinasi:</strong> Punthuk Setumbu (Sunrise) → Borobudur → Candi Mendut → Svargabumi → Museum Ullen Sentalu</p>
-                                        <div class="price-tag">
-                                            2-4 pax: Rp 950.000/pax<br>
-                                            5-7 pax: Rp 750.000/pax<br>
-                                            8-12 pax: Rp 650.000/pax
-                                        </div>
-                                        <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
-                                        <ul class="include-list">
-                                            <li><i class="fas fa-check-circle"></i> Early Pick-up Service</li>
-                                            <li><i class="fas fa-check-circle"></i> Tiket Sunrise Punthuk Setumbu</li>
-                                            <li><i class="fas fa-check-circle"></i> Tiket Borobudur Zone 1</li>
-                                            <li><i class="fas fa-check-circle"></i> Welcome Coffee & Breakfast Box</li>
-                                            <li><i class="fas fa-check-circle"></i> Lunch Premium & Guide Expert</li>
-                                            <li><i class="fas fa-check-circle"></i> Dokumentasi Profesional</li>
-                                        </ul>
-                                        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Keperluan pribadi, tips</p>
-                                        <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%203:%20Sunrise%20Borobudur%20Deluxe" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="package-card">
-                                    <div class="package-header">
-                                        <h4><i class="fas fa-camera"></i> PAKET 4: Instagram Paradise Tour</h4>
-                                    </div>
-                                    <div class="package-body">
-                                        <p><strong>Durasi:</strong> Full Day (07.00 - 18.00)</p>
-                                        <p><strong>Destinasi:</strong> Heha Sky View → Kalibiru → Hutan Pinus Mangunan → Bukit Panguk Kediwung → Tebing Breksi</p>
-                                        <div class="price-tag">
-                                            2-4 pax: Rp 700.000/pax<br>
-                                            5-7 pax: Rp 550.000/pax<br>
-                                            8-12 pax: Rp 450.000/pax
-                                        </div>
-                                        <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
-                                        <ul class="include-list">
-                                            <li><i class="fas fa-check-circle"></i> Transportasi Premium</li>
-                                            <li><i class="fas fa-check-circle"></i> Tiket Masuk Semua Spot</li>
-                                            <li><i class="fas fa-check-circle"></i> Guide & Driver</li>
-                                            <li><i class="fas fa-check-circle"></i> Lunch Box</li>
-                                            <li><i class="fas fa-check-circle"></i> Air Mineral</li>
-                                            <li><i class="fas fa-check-circle"></i> Biaya Parkir</li>
-                                        </ul>
-                                        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Foto drone (Rp 200k), tips</p>
-                                        <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%204:%20Instagram%20Paradise%20Tour" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3: Paket 5 & 6 -->
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="package-card">
-                                    <div class="package-header">
-                                        <h4><i class="fas fa-hotel"></i> PAKET 5: Complete Jogja 2D1N</h4>
-                                    </div>
-                                    <div class="package-body">
-                                        <p><strong>Durasi:</strong> 2 Hari 1 Malam</p>
-                                        <p><strong>Day 1:</strong> Prambanan → Keraton → Malioboro → Alun-Alun Kidul</p>
-                                        <p><strong>Day 2:</strong> Borobudur Sunrise → Punthuk Setumbu → Candi Mendut → Svargabumi</p>
-                                        <div class="price-tag">
-                                            2-4 pax: Rp 1.850.000/pax<br>
-                                            5-7 pax: Rp 1.500.000/pax<br>
-                                            8-12 pax: Rp 1.250.000/pax
-                                        </div>
-                                        <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
-                                        <ul class="include-list">
-                                            <li><i class="fas fa-check-circle"></i> Mobil Premium 2 Hari + Sopir + BBM</li>
-                                            <li><i class="fas fa-check-circle"></i> Hotel Bintang 3 (1 Malam)</li>
-                                            <li><i class="fas fa-check-circle"></i> Tiket Masuk Semua Destinasi</li>
-                                            <li><i class="fas fa-check-circle"></i> 2x Lunch, 1x Dinner, 1x Breakfast</li>
-                                            <li><i class="fas fa-check-circle"></i> Guide Profesional & Dokumentasi</li>
-                                        </ul>
-                                        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Tiket pesawat, upgrade hotel</p>
-                                        <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%205:%20Complete%20Jogja%202D1N" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="package-card">
-                                    <div class="package-header">
-                                        <h4><i class="fas fa-water"></i> PAKET 6: Beach Hopping Gunungkidul</h4>
-                                    </div>
-                                    <div class="package-body">
-                                        <p><strong>Durasi:</strong> Full Day (07.00 - 19.00)</p>
-                                        <p><strong>Destinasi:</strong> Pantai Siung → Pantai Wediombo → Pantai Timang → Pantai Indrayanti → Pantai Krakal</p>
-                                        <div class="price-tag">
-                                            2-4 pax: Rp 650.000/pax<br>
-                                            5-7 pax: Rp 500.000/pax<br>
-                                            8-12 pax: Rp 420.000/pax
-                                        </div>
-                                        <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
-                                        <ul class="include-list">
-                                            <li><i class="fas fa-check-circle"></i> Transportasi AC + Driver</li>
-                                            <li><i class="fas fa-check-circle"></i> Tiket Masuk 5 Pantai</li>
-                                            <li><i class="fas fa-check-circle"></i> BBM & Parkir</li>
-                                            <li><i class="fas fa-check-circle"></i> Lunch Seafood</li>
-                                            <li><i class="fas fa-check-circle"></i> Guide Lokal</li>
-                                            <li><i class="fas fa-check-circle"></i> Air Mineral</li>
-                                        </ul>
-                                        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Aktivitas optional, tips</p>
-                                        <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%206:%20Beach%20Hopping%20Gunungkidul" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#paketCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#paketCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <!-- Custom Package Info -->
-            <div class="text-center mt-5">
-                <div class="region-section">
-                    <h3 style="color: var(--primary-gold);"><i class="fas fa-magic"></i> Custom Package</h3>
-                    <p class="lead">Tidak menemukan paket yang sesuai? Kami menyediakan layanan <strong>CUSTOM TOUR</strong> yang dirancang khusus sesuai keinginan Anda!</p>
-                    <div class="row mt-4">
-                        <div class="col-md-3">
-                            <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--primary-gold);"></i>
-                            <p class="mt-2"><strong>Tentukan destinasi sendiri</strong></p>
-                        </div>
-                        <div class="col-md-3">
-                            <i class="fas fa-clock" style="font-size: 3rem; color: var(--primary-gold);"></i>
-                            <p class="mt-2"><strong>Atur durasi perjalanan</strong></p>
-                        </div>
-                        <div class="col-md-3">
-                            <i class="fas fa-gem" style="font-size: 3rem; color: var(--primary-gold);"></i>
-                            <p class="mt-2"><strong>Pilih tingkat kemewahan</strong></p>
-                        </div>
-                        <div class="col-md-3">
-                            <i class="fas fa-money-bill-wave" style="font-size: 3rem; color: var(--primary-gold);"></i>
-                            <p class="mt-2"><strong>Sesuaikan budget</strong></p>
-                        </div>
-                    </div>
-                    <a href="https://wa.me/6285713011806?text=Saya%20ingin%20konsultasi%20Custom%20Package" class="btn btn-luxury mt-4">Konsultasi Gratis</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Request Trip -->
-    <section id="request-trip" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title text-center">Request Trip Custom</h2>
-            <p class="text-center mb-5">Rencanakan perjalanan impian Anda bersama kami</p>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="region-section">
-                        <form id="requestForm">
-                            <div class="mb-3">
-                                <label for="nama" class="form-label"><i class="fas fa-user"></i> Nama Lengkap</label>
-                                <input type="text" class="form-control" id="nama" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="wa" class="form-label"><i class="fab fa-whatsapp"></i> Nomor WhatsApp</label>
-                                <input type="text" class="form-control" id="wa" placeholder="08xxx" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="jumlah" class="form-label"><i class="fas fa-users"></i> Jumlah Orang</label>
-                                <input type="number" class="form-control" id="jumlah" min="1" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="tanggal" class="form-label"><i class="fas fa-calendar"></i> Rencana Trip (Tanggal)</label>
-                                <input type="date" class="form-control" id="tanggal" required>
-                            >
-                    </div>
                 </div>
                 <div class="col-md-4">
                     <div class="car-card">
@@ -904,88 +492,668 @@
         </div>
     </section>
 
-    <!-- Destinasi Wisata dengan Carousel -->
+    <!-- Destinasi Wisata -->
     <section id="destinasi" class="section bg-light">
         <div class="container">
             <h2 class="section-title text-center">Destinasi Wisata Premium</h2>
             <p class="text-center mb-5">Jelajahi keindahan Jogja & Magelang yang menakjubkan</p>
 
-            <!-- Carousel Destinasi -->
-            <div id="destinasiCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="3"></button>
-                    <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="4"></button>
-                    <button type="button" data-bs-target="#destinasiCarousel" data-bs-slide-to="5"></button>
+            <!-- Kabupaten Sleman -->
+            <div class="region-section">
+                <h3 class="region-title"><i class="fas fa-map-marker-alt"></i> Kabupaten Sleman</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 style="color: var(--primary-gold);">Wisata Sejarah & Budaya</h5>
+                        <ul class="destination-list">
+                            <li><strong>Candi Prambanan</strong> - Kompleks candi Hindu megah UNESCO</li>
+                            <li><strong>Keraton Ratu Boko</strong> - Istana dengan sunset spektakuler</li>
+                            <li><strong>Museum Ullen Sentalu</strong> - Museum seni berkelas internasional</li>
+                            <li><strong>Candi Kalasan</strong> - Candi Buddha tertua di Yogyakarta</li>
+                            <li><strong>Affandi Museum</strong> - Galeri seni maestro lukis Indonesia</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 style="color: var(--primary-gold);">Wisata Alam</h5>
+                        <ul class="destination-list">
+                            <li><strong>Kaliurang</strong> - Resort pegunungan sejuk Merapi</li>
+                            <li><strong>Kaliadem</strong> - Wisata vulkanologi & jeep lava tour</li>
+                            <li><strong>Goa Jomblang</strong> - Gua vertikal dengan cahaya surga</li>
+                            <li><strong>Hutan Pinus Mangunan</strong> - Spot foto instagramable</li>
+                            <li><strong>Embung Nglanggeran</strong> - Danau dengan panorama 360°</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 style="color: var(--primary-gold);">Wisata Modern</h5>
+                        <ul class="destination-list">
+                            <li><strong>Jogja Bay Waterpark</strong> - Taman air terbesar Indonesia</li>
+                            <li><strong>The Lost World Castle</strong> - Kastil bergaya Eropa</li>
+                            <li><strong>Sindu Kusuma Edupark</strong> - Theme park bianglala iconic</li>
+                            <li><strong>Taman Pelangi</strong> - Garden lampu warna-warni</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                    <!-- Slide 1: Kabupaten Sleman -->
-                    <div class="carousel-item active">
-                        <div class="destination-carousel-item">
-                            <div class="region-section">
-                                <h3 class="region-title text-center"><i class="fas fa-map-marker-alt"></i> Kabupaten Sleman</h3>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h5 style="color: var(--primary-gold);">Wisata Sejarah & Budaya</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Candi Prambanan</strong> - Kompleks candi Hindu megah UNESCO</li>
-                                            <li><strong>Keraton Ratu Boko</strong> - Istana dengan sunset spektakuler</li>
-                                            <li><strong>Museum Ullen Sentalu</strong> - Museum seni berkelas internasional</li>
-                                            <li><strong>Candi Kalasan</strong> - Candi Buddha tertua di Yogyakarta</li>
-                                            <li><strong>Affandi Museum</strong> - Galeri seni maestro lukis Indonesia</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h5 style="color: var(--primary-gold);">Wisata Alam</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Kaliurang</strong> - Resort pegunungan sejuk Merapi</li>
-                                            <li><strong>Kaliadem</strong> - Wisata vulkanologi & jeep lava tour</li>
-                                            <li><strong>Goa Jomblang</strong> - Gua vertikal dengan cahaya surga</li>
-                                            <li><strong>Hutan Pinus Mangunan</strong> - Spot foto instagramable</li>
-                                            <li><strong>Embung Nglanggeran</strong> - Danau dengan panorama 360°</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h5 style="color: var(--primary-gold);">Wisata Modern</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Jogja Bay Waterpark</strong> - Taman air terbesar Indonesia</li>
-                                            <li><strong>The Lost World Castle</strong> - Kastil bergaya Eropa</li>
-                                            <li><strong>Sindu Kusuma Edupark</strong> - Theme park bianglala iconic</li>
-                                            <li><strong>Taman Pelangi</strong> - Garden lampu warna-warni</li>
-                                        </ul>
-                                    </div>
-                                </div>
+            </div>
+
+            <!-- Kota Yogyakarta -->
+            <div class="region-section">
+                <h3 class="region-title"><i class="fas fa-map-marker-alt"></i> Kota Yogyakarta</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Heritage & Cultural Icons</h5>
+                        <ul class="destination-list">
+                            <li><strong>Keraton Yogyakarta</strong> - Istana Sultan arsitektur Jawa klasik</li>
+                            <li><strong>Taman Sari</strong> - Water Castle kerajaan</li>
+                            <li><strong>Malioboro</strong> - Jantung kota belanja & kuliner</li>
+                            <li><strong>Alun-Alun Kidul</strong> - Lapangan dengan pohon beringin kembar</li>
+                            <li><strong>Benteng Vredeburg</strong> - Museum sejarah kemerdekaan</li>
+                            <li><strong>Kotagede</strong> - Kampung perak bersejarah</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Wisata Kuliner & Belanja</h5>
+                        <ul class="destination-list">
+                            <li><strong>Beringharjo Market</strong> - Pasar tradisional sejak 1758</li>
+                            <li><strong>Gudeg Wijilan</strong> - Kuliner gudeg legendaris</li>
+                            <li><strong>Bakpia Pathok</strong> - Oleh-oleh khas berkualitas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Bantul -->
+            <div class="region-section">
+                <h3 class="region-title"><i class="fas fa-map-marker-alt"></i> Kabupaten Bantul</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Pantai & Wisata Laut</h5>
+                        <ul class="destination-list">
+                            <li><strong>Pantai Parangtritis</strong> - Pantai legendaris Ratu Kidul</li>
+                            <li><strong>Pantai Parangkusumo</strong> - Pantai spiritual dengan gumuk</li>
+                            <li><strong>Pantai Depok</strong> - Surga seafood sunset romantis</li>
+                            <li><strong>Pantai Goa Cemara</strong> - Pantai dengan cemara rindang</li>
+                            <li><strong>Gumuk Pasir</strong> - Padang pasir ala Timur Tengah</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Wisata Alam & Edukasi</h5>
+                        <ul class="destination-list">
+                            <li><strong>Tebing Breksi</strong> - Quarry dengan arsitektur unik</li>
+                            <li><strong>Puncak Becici</strong> - Spot sunrise view pegunungan</li>
+                            <li><strong>Hutan Pinus Pengger</strong> - Gardu pandang romantis</li>
+                            <li><strong>Goa Selarong</strong> - Gua bersejarah Pangeran Diponegoro</li>
+                            <li><strong>Taman Batu</strong> - Kebun buah spot foto menarik</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Gunungkidul -->
+            <div class="region-section">
+                <h3 class="region-title"><i class="fas fa-map-marker-alt"></i> Kabupaten Gunungkidul</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Pantai Eksotis</h5>
+                        <ul class="destination-list">
+                            <li><strong>Pantai Indrayanti</strong> - Pasir putih fasilitas premium</li>
+                            <li><strong>Pantai Timang</strong> - Gondola unik melintasi tebing</li>
+                            <li><strong>Pantai Wediombo</strong> - Tersembunyi dengan kolam alami</li>
+                            <li><strong>Pantai Siung</strong> - Surga rock climbing tebing megah</li>
+                            <li><strong>Pantai Ngrenehan</strong> - Desa nelayan seafood segar</li>
+                            <li><strong>Pantai Krakal</strong> - Pantai landai spot camping</li>
+                            <li><strong>Pantai Baron</strong> - Pertemuan sungai dan laut</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Wisata Petualangan</h5>
+                        <ul class="destination-list">
+                            <li><strong>Goa Pindul</strong> - Cave tubing adventure menantang</li>
+                            <li><strong>Air Terjun Sri Gethuk</strong> - Air terjun rakit bambu</li>
+                            <li><strong>Embung Batara Sriten</strong> - Danau view perbukitan</li>
+                            <li><strong>Bukit Panguk Kediwung</strong> - Sunrise kabut mistis</li>
+                            <li><strong>Heha Sky View</strong> - Resto pemandangan 360°</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Kulon Progo -->
+            <div class="region-section">
+                <h3 class="region-title"><i class="fas fa-map-marker-alt"></i> Kabupaten Kulon Progo</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Wisata Pantai</h5>
+                        <ul class="destination-list">
+                            <li><strong>Pantai Glagah</strong> - Pantai dengan laguna eksotis</li>
+                            <li><strong>Pantai Trisik</strong> - Pantai spiritual upacara labuhan</li>
+                            <li><strong>Pantai Congot</strong> - Spot surfing terbaik Jogja</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Wisata Alam</h5>
+                        <ul class="destination-list">
+                            <li><strong>Waduk Sermo</strong> - Danau waduk spot memancing</li>
+                            <li><strong>Kalibiru</strong> - Tree top adventure view waduk</li>
+                            <li><strong>Puncak Suroloyo</strong> - Tempat suci sunrise memukau</li>
+                            <li><strong>Bukit Klangon</strong> - Spot foto instagramable swing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Magelang -->
+            <div class="region-section">
+                <h3 class="region-title"><i class="fas fa-map-marker-alt"></i> Kabupaten Magelang</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Wisata Heritage Dunia</h5>
+                        <ul class="destination-list">
+                            <li><strong>Candi Borobudur</strong> ⭐ - Candi Buddha terbesar dunia UNESCO</li>
+                            <li><strong>Candi Mendut</strong> - Arca Buddha terbesar di Jawa</li>
+                            <li><strong>Candi Pawon</strong> - Candi transit Borobudur-Mendut</li>
+                            <li><strong>Punthuk Setumbu</strong> - Spot sunrise terbaik view Borobudur</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: var(--primary-gold);">Wisata Alam & Petualangan</h5>
+                        <ul class="destination-list">
+                            <li><strong>Ketep Pass</strong> - Viewing point Merapi & Merbabu</li>
+                            <li><strong>Bukit Rhema</strong> - Landmark unik Gereja Ayam view 360°</li>
+                            <li><strong>Svargabumi</strong> - Sky garden ornamen tradisional Jawa</li>
+                            <li><strong>Rafting Sungai Elo</strong> - Arung jeram pemandangan alami</li>
+                            <li><strong>Pos Mati</strong> - Spot camping view pegunungan</li>
+                            <li><strong>Umbul Tlatar</strong> - Kolam pemandian jernih alami</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paket Wisata -->
+    <section id="paket" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Paket Wisata Eksklusif</h2>
+            <p class="text-center mb-5">Pilihan paket tour premium yang dirancang khusus untuk pengalaman tak terlupakan</p>
+
+            <div class="row">
+                <!-- Paket 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4><i class="fas fa-crown"></i> PAKET 1: Heritage Triangle Luxury</h4>
+                        </div>
+                        <div class="package-body">
+                            <p><strong>Durasi:</strong> Full Day (08.00 - 18.00)</p>
+                            <p><strong>Destinasi:</strong> Borobudur → Prambanan → Keraton Yogyakarta → Malioboro</p>
+                            <div class="price-tag">
+                                2-4 pax: Rp 850.000/pax<br>
+                                5-7 pax: Rp 650.000/pax<br>
+                                8-12 pax: Rp 550.000/pax
                             </div>
+                            <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
+                            <ul class="include-list">
+                                <li><i class="fas fa-check-circle"></i> Mobil Premium + Sopir + BBM</li>
+                                <li><i class="fas fa-check-circle"></i> Tiket Masuk Semua Destinasi</li>
+                                <li><i class="fas fa-check-circle"></i> Guide Berlisensi</li>
+                                <li><i class="fas fa-check-circle"></i> Lunch di Restoran Pilihan</li>
+                                <li><i class="fas fa-check-circle"></i> Air Mineral & Snack</li>
+                                <li><i class="fas fa-check-circle"></i> Dokumentasi</li>
+                                <li><i class="fas fa-check-circle"></i> Asuransi Perjalanan</li>
+                            </ul>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Pengeluaran pribadi, belanja souvenir, tips guide (optional)</p>
+                            <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%201:%20Heritage%20Triangle%20Luxury" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Slide 2: Kota Yogyakarta -->
-                    <div class="carousel-item">
-                        <div class="destination-carousel-item">
-                            <div class="region-section">
-                                <h3 class="region-title text-center"><i class="fas fa-map-marker-alt"></i> Kota Yogyakarta</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Heritage & Cultural Icons</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Keraton Yogyakarta</strong> - Istana Sultan arsitektur Jawa klasik</li>
-                                            <li><strong>Taman Sari</strong> - Water Castle kerajaan</li>
-                                            <li><strong>Malioboro</strong> - Jantung kota belanja & kuliner</li>
-                                            <li><strong>Alun-Alun Kidul</strong> - Lapangan dengan pohon beringin kembar</li>
-                                            <li><strong>Benteng Vredeburg</strong> - Museum sejarah kemerdekaan</li>
-                                            <li><strong>Kotagede</strong> - Kampung perak bersejarah</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 style="color: var(--primary-gold);">Wisata Kuliner & Belanja</h5>
-                                        <ul class="destination-list">
-                                            <li><strong>Beringharjo Market</strong> - Pasar tradisional sejak 1758</li>
-                                            <li><strong>Gudeg Wijilan</strong> - Kuliner gudeg legendaris</li>
-                                            <li><strong>Bakpia Pathok</strong> - Oleh-oleh khas berkualitas</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                <!-- Paket 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4><i class="fas fa-umbrella-beach"></i> PAKET 2: Coastal Paradise</h4>
+                        </div>
+                        <div class="package-body">
+                            <p><strong>Durasi:</strong> Full Day (07.00 - 19.00)</p>
+                            <p><strong>Destinasi:</strong> Pantai Timang → Indrayanti → Goa Pindul → Hutan Pinus Pengger</p>
+                            <div class="price-tag">
+                                2-4 pax: Rp 750.000/pax<br>
+                                5-7 pax: Rp 600.000/pax<br>
+                                8-12 pax: Rp 500.000/pax
                             </div>
-                        </div
+                            <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
+                            <ul class="include-list">
+                                <li><i class="fas fa-check-circle"></i> Mobil Premium + Sopir + BBM</li>
+                                <li><i class="fas fa-check-circle"></i> Tiket & Aktivitas Cave Tubing</li>
+                                <li><i class="fas fa-check-circle"></i> Guide Berpengalaman</li>
+                                <li><i class="fas fa-check-circle"></i> Lunch Seafood Segar</li>
+                                <li><i class="fas fa-check-circle"></i> Pelampung & Safety Equipment</li>
+                                <li><i class="fas fa-check-circle"></i> Air Mineral & Snack</li>
+                                <li><i class="fas fa-check-circle"></i> Dokumentasi</li>
+                            </ul>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Gondola Pantai Timang (Rp 150.000), belanja pribadi, tips</p>
+                            <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%202:%20Coastal%20Paradise" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4><i class="fas fa-sun"></i> PAKET 3: Sunrise Borobudur Deluxe</h4>
+                        </div>
+                        <div class="package-body">
+                            <p><strong>Durasi:</strong> Early Morning (04.00 - 15.00)</p>
+                            <p><strong>Destinasi:</strong> Punthuk Setumbu (Sunrise) → Borobudur → Candi Mendut → Svargabumi → Museum Ullen Sentalu</p>
+                            <div class="price-tag">
+                                2-4 pax: Rp 950.000/pax<br>
+                                5-7 pax: Rp 750.000/pax<br>
+                                8-12 pax: Rp 650.000/pax
+                            </div>
+                            <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
+                            <ul class="include-list">
+                                <li><i class="fas fa-check-circle"></i> Early Pick-up Service</li>
+                                <li><i class="fas fa-check-circle"></i> Tiket Sunrise Punthuk Setumbu</li>
+                                <li><i class="fas fa-check-circle"></i> Tiket Borobudur Zone 1</li>
+                                <li><i class="fas fa-check-circle"></i> Welcome Coffee & Breakfast Box</li>
+                                <li><i class="fas fa-check-circle"></i> Lunch Premium</li>
+                                <li><i class="fas fa-check-circle"></i> Guide Expert</li>
+                                <li><i class="fas fa-check-circle"></i> Dokumentasi Profesional</li>
+                            </ul>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Keperluan pribadi, tips guide</p>
+                            <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%203:%20Sunrise%20Borobudur%20Deluxe" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paket 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4><i class="fas fa-camera"></i> PAKET 4: Instagram Paradise Tour</h4>
+                        </div>
+                        <div class="package-body">
+                            <p><strong>Durasi:</strong> Full Day (07.00 - 18.00)</p>
+                            <p><strong>Destinasi:</strong> Heha Sky View → Kalibiru → Hutan Pinus Mangunan → Bukit Panguk Kediwung → Tebing Breksi</p>
+                            <div class="price-tag">
+                                2-4 pax: Rp 700.000/pax<br>
+                                5-7 pax: Rp 550.000/pax<br>
+                                8-12 pax: Rp 450.000/pax
+                            </div>
+                            <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
+                            <ul class="include-list">
+                                <li><i class="fas fa-check-circle"></i> Transportasi Premium</li>
+                                <li><i class="fas fa-check-circle"></i> Tiket Masuk Semua Spot</li>
+                                <li><i class="fas fa-check-circle"></i> Guide & Driver</li>
+                                <li><i class="fas fa-check-circle"></i> Lunch Box</li>
+                                <li><i class="fas fa-check-circle"></i> Air Mineral</li>
+                                <li><i class="fas fa-check-circle"></i> Biaya Parkir</li>
+                            </ul>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Foto drone (optional Rp 200.000), belanja, tips</p>
+                            <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%204:%20Instagram%20Paradise%20Tour" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paket 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4><i class="fas fa-hotel"></i> PAKET 5: Complete Jogja 2D1N</h4>
+                        </div>
+                        <div class="package-body">
+                            <p><strong>Durasi:</strong> 2 Hari 1 Malam</p>
+                            <p><strong>Day 1:</strong> Prambanan → Keraton → Malioboro → Alun-Alun Kidul</p>
+                            <p><strong>Day 2:</strong> Borobudur Sunrise → Punthuk Setumbu → Candi Mendut → Svargabumi</p>
+                            <div class="price-tag">
+                                2-4 pax: Rp 1.850.000/pax<br>
+                                5-7 pax: Rp 1.500.000/pax<br>
+                                8-12 pax: Rp 1.250.000/pax
+                            </div>
+                            <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
+                            <ul class="include-list">
+                                <li><i class="fas fa-check-circle"></i> Mobil Premium 2 Hari + Sopir + BBM</li>
+                                <li><i class="fas fa-check-circle"></i> Hotel Bintang 3 (1 Malam)</li>
+                                <li><i class="fas fa-check-circle"></i> Tiket Masuk Semua Destinasi</li>
+                                <li><i class="fas fa-check-circle"></i> 2x Lunch, 1x Dinner, 1x Breakfast</li>
+                                <li><i class="fas fa-check-circle"></i> Guide Profesional</li>
+                                <li><i class="fas fa-check-circle"></i> Air Mineral & Snack</li>
+                                <li><i class="fas fa-check-circle"></i> Dokumentasi & Asuransi</li>
+                            </ul>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Tiket pesawat, belanja pribadi, upgrade hotel</p>
+                            <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%205:%20Complete%20Jogja%202D1N" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paket 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4><i class="fas fa-water"></i> PAKET 6: Beach Hopping Gunungkidul</h4>
+                        </div>
+                        <div class="package-body">
+                            <p><strong>Durasi:</strong> Full Day (07.00 - 19.00)</p>
+                            <p><strong>Destinasi:</strong> Pantai Siung → Pantai Wediombo → Pantai Timang → Pantai Indrayanti → Pantai Krakal</p>
+                            <div class="price-tag">
+                                2-4 pax: Rp 650.000/pax<br>
+                                5-7 pax: Rp 500.000/pax<br>
+                                8-12 pax: Rp 420.000/pax
+                            </div>
+                            <h6 style="color: var(--primary-gold); font-weight: 700; margin-top: 15px;">Include:</h6>
+                            <ul class="include-list">
+                                <li><i class="fas fa-check-circle"></i> Transportasi AC + Driver</li>
+                                <li><i class="fas fa-check-circle"></i> Tiket Masuk 5 Pantai</li>
+                                <li><i class="fas fa-check-circle"></i> BBM & Parkir</li>
+                                <li><i class="fas fa-check-circle"></i> Lunch Seafood</li>
+                                <li><i class="fas fa-check-circle"></i> Guide Lokal</li>
+                                <li><i class="fas fa-check-circle"></i> Air Mineral</li>
+                            </ul>
+                            <p style="font-size: 0.9rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Aktivitas optional (gondola, snorkeling), tips</p>
+                            <a href="https://wa.me/6285713011806?text=Saya%20tertarik%20dengan%20Paket%206:%20Beach%20Hopping%20Gunungkidul" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Package Info -->
+            <div class="text-center mt-5">
+                <div class="region-section">
+                    <h3 style="color: var(--primary-gold);"><i class="fas fa-magic"></i> Custom Package</h3>
+                    <p class="lead">Tidak menemukan paket yang sesuai? Kami menyediakan layanan <strong>CUSTOM TOUR</strong> yang dirancang khusus sesuai keinginan Anda!</p>
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--primary-gold);"></i>
+                            <p class="mt-2"><strong>Tentukan destinasi sendiri</strong></p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-clock" style="font-size: 3rem; color: var(--primary-gold);"></i>
+                            <p class="mt-2"><strong>Atur durasi perjalanan</strong></p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-gem" style="font-size: 3rem; color: var(--primary-gold);"></i>
+                            <p class="mt-2"><strong>Pilih tingkat kemewahan</strong></p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-money-bill-wave" style="font-size: 3rem; color: var(--primary-gold);"></i>
+                            <p class="mt-2"><strong>Sesuaikan budget</strong></p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/6285713011806?text=Saya%20ingin%20konsultasi%20Custom%20Package" class="btn btn-luxury mt-4">Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Trip -->
+    <section id="request-trip" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Request Trip Custom</h2>
+            <p class="text-center mb-5">Rencanakan perjalanan impian Anda bersama kami</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="region-section">
+                        <form id="requestForm">
+                            <div class="mb-3">
+                                <label for="nama" class="form-label"><i class="fas fa-user"></i> Nama Lengkap</label>
+                                <input type="text" class="form-control" id="nama" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="wa" class="form-label"><i class="fab fa-whatsapp"></i> Nomor WhatsApp</label>
+                                <input type="text" class="form-control" id="wa" placeholder="08xxx" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="jumlah" class="form-label"><i class="fas fa-users"></i> Jumlah Orang</label>
+                                <input type="number" class="form-control" id="jumlah" min="1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tanggal" class="form-label"><i class="fas fa-calendar"></i> Rencana Trip (Tanggal)</label>
+                                <input type="date" class="form-control" id="tanggal" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tempat" class="form-label"><i class="fas fa-map-marker-alt"></i> List Tempat yang Dikunjungi</label>
+                                <textarea class="form-control" id="tempat" rows="4" placeholder="Contoh: Borobudur, Prambanan, Malioboro..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-luxury w-100"><i class="fas fa-paper-plane"></i> Kirim Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Berikan Review Anda</h2>
+            <p class="text-center mb-5">Pendapat Anda sangat berharga bagi kami</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="region-section">
+                        <div class="star-rating mb-3">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="komentar" rows="4" placeholder="Tulis pengalaman Anda..."></textarea>
+                        </div>
+                        <button onclick="submitReview()" class="btn btn-luxury w-100"><i class="fas fa-star"></i> Kirim Review</button>
+                        <div id="reviews" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonial" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Testimoni Pelanggan</h2>
+            <p class="text-center mb-5">Apa kata mereka yang sudah merasakan layanan kami</p>
+            <div id="testimonials" class="row">
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p style="font-style: italic;">"Pengalaman luar biasa dengan Keliling Jogja Package! Pelayanan ramah dan tempat wisata yang indah. Sopir sangat profesional dan guide menjelaskan dengan detail. Highly recommended!"</p>
+                        <p class="mb-1"><strong>- Ahmad S.</strong></p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p style="font-style: italic;">"Sewa mobilnya nyaman, shuttle bandara tepat waktu. Harga bersaing dengan pelayanan maksimal. Puas banget! Akan pakai jasa mereka lagi kalau ke Jogja."</p>
+                        <p class="mb-1"><strong>- Sari L.</strong></p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Hubungi Kami</h2>
+            <p class="text-center mb-5">Kami siap membantu merencanakan perjalanan impian Anda</p>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-whatsapp" style="font-size: 4rem; color: var(--primary-gold);"></i>
+                    <h5 class="mt-3">WhatsApp</h5>
+                    <p><a href="https://wa.me/6285713011806" style="color: var(--dark-luxury); font-weight: 600;">0857-1301-1806</a></p>
+                    <p style="color: #666; font-size: 0.9rem;">Chat dengan kami untuk respon cepat</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-envelope" style="font-size: 4rem; color: var(--primary-gold);"></i>
+                    <h5 class="mt-3">Email</h5>
+                    <p><a href="mailto:kelilingjogjapackage@gmail.com" style="color: var(--dark-luxury); font-weight: 600;">kelilingjogjapackage@gmail.com</a></p>
+                    <p style="color: #666; font-size: 0.9rem;">Kirim pertanyaan detail via email</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fas fa-map-marker-alt" style="font-size: 4rem; color: var(--primary-gold);"></i>
+                    <h5 class="mt-3">Lokasi</h5>
+                    <p style="color: var(--dark-luxury); font-weight: 600;">Yogyakarta, Indonesia</p>
+                    <p style="color: #666; font-size: 0.9rem;">Melayani area Jogja & Magelang</p>
+                </div>
+            </div>
+            
+            <!-- Social Media Section -->
+            <div class="text-center mt-5">
+                <h4 style="color: var(--dark-luxury); font-weight: 700; margin-bottom: 30px;">Ikuti Kami di Media Sosial</h4>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <a href="https://www.instagram.com/kelilingjogjapackage?igsh=MWd2b3ZzOXl5NDc5cw==" target="_blank" class="btn btn-luxury m-2" style="min-width: 200px;">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61583377858831" target="_blank" class="btn btn-luxury m-2" style="min-width: 200px;">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="https://www.tiktok.com/@keliling.jogja.pa?_r=1&_t=ZS-917qyMbbtiL" target="_blank" class="btn btn-luxury m-2" style="min-width: 200px;">
+                            <i class="fab fa-tiktok"></i> TikTok
+                        </a>
+                        <a href="https://youtube.com/@kelilingjogjapackage" target="_blank" class="btn btn-luxury m-2" style="min-width: 200px;">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://wa.me/6285713011806" target="_blank" class="btn btn-luxury m-2" style="min-width: 200px;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <p class="mt-4" style="color: #666;">Ikuti akun media sosial kami untuk update paket wisata, promo menarik, dan inspirasi liburan!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Tentang Kami</h5>
+                    <p>Keliling Jogja Package adalah penyedia layanan perjalanan dan wisata premium terpercaya di Yogyakarta. Kami menghadirkan pengalaman wisata mewah dengan standar pelayanan tertinggi untuk kenangan seumur hidup Anda.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Layanan Kami</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#sewa-mobil"><i class="fas fa-car"></i> Sewa Mobil Premium</a></li>
+                        <li><a href="#shuttle-yia"><i class="fas fa-plane"></i> Shuttle YIA Airport</a></li>
+                        <li><a href="#paket"><i class="fas fa-suitcase"></i> Paket Tour Eksklusif</a></li>
+                        <li><a href="#request-trip"><i class="fas fa-magic"></i> Custom Trip Request</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Hubungi Kami</h5>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/6285713011806">0857-1301-1806</a></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:kelilingjogjapackage@gmail.com">kelilingjogjapackage@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</p>
+                    
+                    <div class="mt-3">
+                        <h6 style="color: var(--primary-gold);">Follow Us:</h6>
+                        <a href="https://www.instagram.com/kelilingjogjapackage?igsh=MWd2b3ZzOXl5NDc5cw==" target="_blank" title="Instagram" style="font-size: 1.8rem; margin-right: 15px;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61583377858831" target="_blank" title="Facebook" style="font-size: 1.8rem; margin-right: 15px;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@keliling.jogja.pa?_r=1&_t=ZS-917qyMbbtiL" target="_blank" title="TikTok" style="font-size: 1.8rem; margin-right: 15px;">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://youtube.com/@kelilingjogjapackage" target="_blank" title="YouTube" style="font-size: 1.8rem; margin-right: 15px;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/6285713011806" target="_blank" title="WhatsApp" style="font-size: 1.8rem;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white mt-4">
+            <div class="text-center">
+                <p>&copy; 2025 Keliling Jogja Package. All Rights Reserved. | Your Luxury Travel Companion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-wa">
+        <a href="https://wa.me/6285713011806?text=Halo%20Keliling%20Jogja%20Package!%20Saya%20ingin%20bertanya" target="_blank" title="Chat WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let selectedRating = 0;
+
+        // Rating System
+        document.querySelectorAll('.star').forEach(star => {
+            star.addEventListener('click', function() {
+                selectedRating = this.getAttribute('data-value');
+                document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+                for(let i = 0; i < selectedRating; i++) {
+                    document.querySelectorAll('.star')[i].classList.add('selected');
+                }
+            });
+        });
+
+        // Submit Review
+        function submitReview() {
+            const komentar = document.getElementById('komentar').value;
+            if(selectedRating === 0 || komentar === '') {
+                alert('Mohon berikan rating dan komentar!');
+                return;
+            }
+            
+            const reviewHTML = `
+                <div class="testimonial">
+                    <p style="font-style: italic;">"${komentar}"</p>
+                    <div class="rating">
+                        ${'<i class="fas fa-star"></i>'.repeat(selectedRating)}
+                        ${'<i class="far fa-star"></i>'.repeat(5-selectedRating)}
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('reviews').insertAdjacentHTML('afterbegin', reviewHTML);
+            document.getElementById('komentar').value = '';
+            selectedRating = 0;
+            document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+            alert('Terima kasih atas review Anda!');
+        }
+
+        // Request Form Handler
+        document.getElementById('requestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const wa = document.getElementById('wa').value;
+            const jumlah = document.getElementById('jumlah').value;
+            const tanggal = document.getElementById('tanggal').value;
+            const tempat = document.getElementById('tempat').value;
+            
+            const message = `Halo, saya ingin request trip:%0A%0ANama: ${nama}%0AEmail: ${email}%0AWhatsApp: ${wa}%0AJumlah Orang: ${jumlah}%0ATanggal: ${tanggal}%0ATempat: ${tempat}`;
+            window.open(`https://wa.me/6285713011806?text=${message}`, '_blank');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
