@@ -1091,6 +1091,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="region-section">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="nama" placeholder="Nama Anda (opsional)">
+                    </div>
                     <div class="star-rating mb-3">
                         <span class="star" data-value="1">★</span>
                         <span class="star" data-value="2">★</span>
@@ -1102,9 +1105,19 @@
                         <textarea class="form-control" id="komentar" rows="4" placeholder="Tulis pengalaman Anda..."></textarea>
                     </div>
                     <button onclick="submitReview()" class="btn btn-luxury w-100"><i class="fas fa-star"></i> Kirim Review</button>
-                    <div id="reviews" class="mt-4"></div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial -->
+<section id="testimonial" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title text-center">Testimoni Pelanggan</h2>
+        <p class="text-center mb-5">Apa kata mereka yang sudah merasakan layanan kami</p>
+        <div id="testimonials" class="row">
+            <!-- Testimoni akan dimuat secara dinamis di sini -->
         </div>
     </div>
 </section>
@@ -1126,7 +1139,11 @@
         });
     });
 
+    // Load testimonials from localStorage on page load
+    document.addEventListener('DOMContentLoaded', loadTestimonials);
+
     function submitReview() {
+        const nama = document.getElementById('nama').value.trim() || 'Anonymous';
         const komentar = document.getElementById('komentar').value.trim();
         if (selectedRating === 0) {
             alert('Silakan pilih rating bintang terlebih dahulu.');
@@ -1137,35 +1154,74 @@
             return;
         }
 
-        // Encode message for WhatsApp
-        const message = encodeURIComponent(`Rating: ${selectedRating} bintang\nKomentar: ${komentar}`);
-        const waUrl = `https://wa.me/6285713011806?text=${message}`;
+        // Create testimonial object
+        const testimonial = {
+            nama: nama,
+            rating: selectedRating,
+            komentar: komentar,
+            timestamp: new Date().toISOString()
+        };
 
-        // Redirect to WhatsApp
-        window.location.href = waUrl;
+        // Save to localStorage
+        let testimonials = JSON.parse(localStorage.getItem('testimonials')) || [];
+        testimonials.push(testimonial);
+        localStorage.setItem('testimonials', JSON.stringify(testimonials));
+
+        // Reload testimonials
+        loadTestimonials();
+
+        // Reset form
+        document.getElementById('nama').value = '';
+        document.getElementById('komentar').value = '';
+        selectedRating = 0;
+        document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
+
+        alert('Terima kasih atas review Anda! Testimoni telah ditambahkan.');
     }
-</script>
 
-<style>
-    .star {
-        font-size: 2rem;
-        color: #ddd;
-        cursor: pointer;
-        transition: color 0.2s;
-    }
-    .star:hover,
-    .star.selected {
-        color: var(--primary-gold);
-    }
-</style>
+    function loadTestimonials() {
+        const testimonialsContainer = document.getElementById('testimonials');
+        testimonialsContainer.innerHTML = ''; // Clear existing
 
+        let testimonials = JSON.parse(localStorage.getItem('testimonials')) || [];
 
-    <!-- Testimonial -->
-    <section id="testimonial" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title text-center">Testimoni Pelanggan</h2>
-            <p class="text-center mb-5">Apa kata mereka yang sudah merasakan layanan kami</p>
-            <div id="testimonials" class="row">
+        // Sort by timestamp (newest first)
+        testimonials.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+        testimonials.forEach(testimonial => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-6';
+
+            const testimonialDiv = document.createElement('div');
+            testimonialDiv.className = 'testimonial';
+
+            const pKomentar = document.createElement('p');
+            pKomentar.style.fontStyle = 'italic';
+            pKomentar.textContent = `"${testimonial.komentar}"`;
+
+            const pNama = document.createElement('p');
+            pNama.className = 'mb-1';
+            pNama.innerHTML = `<strong>- ${testimonial.nama}</strong>`;
+
+            const ratingDiv = document.createElement('div');
+            ratingDiv.className = 'rating';
+            for (let i = 0; i < testimonial.rating; i++) {
+                const starIcon = document.createElement('i');
+                starIcon.className = 'fas fa-star';
+                ratingDiv.appendChild(starIcon);
+            }
+
+            testimonialDiv.appendChild(pKomentar);
+            testimonialDiv.appendChild(pNama);
+            testimonialDiv.appendChild(ratingDiv);
+
+            colDiv.appendChild(testimonialDiv);
+            testimonialsContainer.appendChild(colDiv);
+        });
+
+        // If no testimonials, show default ones
+        if (testimonials.length === 0) {
+            testimonialsContainer.innerHTML = `
                 <div class="col-md-6">
                     <div class="testimonial">
                         <p style="font-style: italic;">"Pengalaman luar biasa dengan Keliling Jogja Package! Pelayanan ramah dan tempat wisata yang indah. Sopir sangat profesional dan guide menjelaskan dengan detail. Highly recommended!"</p>
@@ -1184,9 +1240,24 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            `;
+        }
+    }
+</script>
+
+<style>
+    .star {
+        font-size: 2rem;
+        color: #ddd;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+    .star:hover,
+    .star.selected {
+        color: var(--primary-gold);
+    }
+</style>
+
 
     <!-- Kontak -->
     <section id="kontak" class="section">
