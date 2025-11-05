@@ -405,98 +405,240 @@
         <p class="text-center mb-5">Armada berkualitas dengan sopir profesional untuk kenyamanan perjalanan Anda<br>
         <span style="color: var(--primary-gold); font-weight: 600; font-size: 1.05rem;">📍 Paket Unit + Driver + BBM | Rute Searah dalam Jogja</span></p>
         
-        <!-- Carousel Wrapper -->
-        <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Slide 1: Toyota Avanza -->
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-lg-4"> <!-- Adjusted for single card centering -->
-                            <div class="car-card">
-                                <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/fit-10.png" alt="Avanza">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Toyota Avanza</h5>
-                                    <div class="price-tag mb-3">Mulai dari Rp 500.000</div>
-                                    <ul class="include-list">
-                                        <li><i class="fas fa-users"></i> Kapasitas: 5 orang</li>
-                                        <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
-                                        <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
-                                        <li><i class="fas fa-snowflake"></i> AC & Nyaman</li>
-                                    </ul>
-                                    <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
-                                    <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Avanza" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+        <!-- Carousel Container with Custom Controls -->
+        <div class="carousel-container">
+            <!-- Custom Prev Button -->
+            <button class="custom-carousel-btn custom-prev-btn" onclick="prevSlide('carCarousel')">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <!-- Carousel Wrapper -->
+            <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1: Semua mobil untuk desktop, satu per satu untuk mobile -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Toyota Avanza -->
+                            <div class="col-md-4 d-none d-md-block"> <!-- Tampil di desktop -->
+                                <div class="car-card">
+                                    <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/fit-10.png" alt="Avanza">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Toyota Avanza</h5>
+                                        <div class="price-tag mb-3">Mulai dari Rp 500.000</div>
+                                        <ul class="include-list">
+                                            <li><i class="fas fa-users"></i> Kapasitas: 5 orang</li>
+                                            <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
+                                            <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
+                                            <li><i class="fas fa-snowflake"></i> AC & Nyaman</li>
+                                        </ul>
+                                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
+                                        <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Avanza" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-md-none"> <!-- Tampil di mobile -->
+                                <div class="car-card">
+                                    <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/fit-10.png" alt="Avanza">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Toyota Avanza</h5>
+                                        <div class="price-tag mb-3">Mulai dari Rp 500.000</div>
+                                        <ul class="include-list">
+                                            <li><i class="fas fa-users"></i> Kapasitas: 5 orang</li>
+                                            <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
+                                            <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
+                                            <li><i class="fas fa-snowflake"></i> AC & Nyaman</li>
+                                        </ul>
+                                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
+                                        <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Avanza" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Innova Reborn -->
+                            <div class="col-md-4 d-none d-md-block"> <!-- Tampil di desktop -->
+                                <div class="car-card">
+                                    <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/kijang-innova-img2.png" alt="Innova Reborn">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Innova Reborn</h5>
+                                        <div class="price-tag mb-3">Mulai dari Rp 800.000</div>
+                                        <ul class="include-list">
+                                            <li><i class="fas fa-users"></i> Kapasitas: 6 orang</li>
+                                            <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
+                                            <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
+                                            <li><i class="fas fa-star"></i> Interior mewah & lega</li>
+                                        </ul>
+                                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
+                                        <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Innova%20Reborn" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Toyota Hiace -->
+                            <div class="col-md-4 d-none d-md-block"> <!-- Tampil di desktop -->
+                                <div class="car-card">
+                                    <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/hiace-img3.png" alt="Hiace">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Toyota Hiace</h5>
+                                        <div class="price-tag mb-3">Mulai dari Rp 1.150.000</div>
+                                        <ul class="include-list">
+                                            <li><i class="fas fa-users"></i> Kapasitas: Hingga 12 kursi</li>
+                                            <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
+                                            <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
+                                            <li><i class="fas fa-suitcase"></i> Bagasi luas untuk rombongan</li>
+                                        </ul>
+                                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
+                                        <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Hiace" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2: Innova Reborn (untuk mobile) -->
+                    <div class="carousel-item d-md-none"> <!-- Hanya tampil di mobile -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="car-card">
+                                    <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/kijang-innova-img2.png" alt="Innova Reborn">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Innova Reborn</h5>
+                                        <div class="price-tag mb-3">Mulai dari Rp 800.000</div>
+                                        <ul class="include-list">
+                                            <li><i class="fas fa-users"></i> Kapasitas: 6 orang</li>
+                                            <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
+                                            <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
+                                            <li><i class="fas fa-star"></i> Interior mewah & lega</li>
+                                        </ul>
+                                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
+                                        <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Innova%20Reborn" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3: Toyota Hiace (untuk mobile) -->
+                    <div class="carousel-item d-md-none"> <!-- Hanya tampil di mobile -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="car-card">
+                                    <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/hiace-img3.png" alt="Hiace">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Toyota Hiace</h5>
+                                        <div class="price-tag mb-3">Mulai dari Rp 1.150.000</div>
+                                        <ul class="include-list">
+                                            <li><i class="fas fa-users"></i> Kapasitas: Hingga 12 kursi</li>
+                                            <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
+                                            <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
+                                            <li><i class="fas fa-suitcase"></i> Bagasi luas untuk rombongan</li>
+                                        </ul>
+                                        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
+                                        <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Hiace" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Slide 2: Innova Reborn -->
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="car-card">
-                                <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/kijang-innova-img2.png" alt="Innova Reborn">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Innova Reborn</h5>
-                                    <div class="price-tag mb-3">Mulai dari Rp 800.000</div>
-                                    <ul class="include-list">
-                                        <li><i class="fas fa-users"></i> Kapasitas: 6 orang</li>
-                                        <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
-                                        <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
-                                        <li><i class="fas fa-star"></i> Interior mewah & lega</li>
-                                    </ul>
-                                    <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
-                                    <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Innova%20Reborn" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Carousel Controls (Bootstrap default, bisa dihapus jika tidak perlu) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
                 
-                <!-- Slide 3: Toyota Hiace -->
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="car-card">
-                                <img src="https://toyotabengkulu.id/wp-content/uploads/2018/08/hiace-img3.png" alt="Hiace">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title" style="color: var(--dark-luxury); font-weight: 700;">Toyota Hiace</h5>
-                                    <div class="price-tag mb-3">Mulai dari Rp 1.150.000</div>
-                                    <ul class="include-list">
-                                        <li><i class="fas fa-users"></i> Kapasitas: Hingga 12 kursi</li>
-                                        <li><i class="fas fa-check"></i> Unit + Driver + BBM</li>
-                                        <li><i class="fas fa-map-marker-alt"></i> Rute searah dalam Jogja</li>
-                                        <li><i class="fas fa-suitcase"></i> Bagasi luas untuk rombongan</li>
-                                    </ul>
-                                    <p style="font-size: 0.85rem; color: #666; margin-top: 10px;"><strong>Not Include:</strong> Parkir & makan driver</p>
-                                    <a href="https://wa.me/6285713011806?text=Saya%20ingin%20sewa%20Hiace" class="btn btn-luxury w-100 mt-3">Pesan Sekarang</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="d-md-none"></button>
+                    <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="d-md-none"></button>
                 </div>
             </div>
             
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <!-- Custom Next Button -->
+            <button class="custom-carousel-btn custom-next-btn" onclick="nextSlide('carCarousel')">
+                <i class="fas fa-chevron-right"></i>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
         </div>
     </div>
 </section>
+
+<script>
+    // Fungsi untuk geser ke slide sebelumnya
+    function prevSlide(carouselId) {
+        const carousel = new bootstrap.Carousel(document.getElementById(carouselId));
+        carousel.prev();
+    }
+
+    // Fungsi untuk geser ke slide berikutnya
+    function nextSlide(carouselId) {
+        const carousel = new bootstrap.Carousel(document.getElementById(carouselId));
+        carousel.next();
+    }
+</script>
+
+<style>
+    .carousel-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-carousel-btn {
+        background-color: var(--primary-gold);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.3s;
+        z-index: 10;
+        position: absolute;
+    }
+
+    .custom-carousel-btn:hover {
+        background-color: var(--dark-luxury);
+        transform: scale(1.1);
+    }
+
+    .custom-prev-btn {
+        left: -80px; /* Posisi di kiri carousel */
+    }
+
+    .custom-next-btn {
+        right: -80px; /* Posisi di kanan carousel */
+    }
+
+    /* Responsivitas untuk mobile */
+    @media (max-width: 768px) {
+        .custom-carousel-btn {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+        }
+        .custom-prev-btn {
+            left: -60px;
+        }
+        .custom-next-btn {
+            right: -60px;
+        }
+    }
+
+    /* Sembunyikan tombol jika layar terlalu kecil */
+    @media (max-width: 576px) {
+        .custom-carousel-btn {
+            display: none;
+        }
+    }
+</style>
 
 
    <!-- Shuttle YIA -->
